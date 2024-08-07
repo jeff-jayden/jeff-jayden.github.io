@@ -40,7 +40,7 @@ jobs:
           # 检查本地 CSS 目录是否存在
           if [ -d "public/css/" ]; then
             # 构建输出目录，假设构建脚本输出到 public/ 目录
-            cp -r public/css/* public/css/ ${{ github.workspace }}/css/ # 复制 CSS 文件到 public/css/ 目录
+            cp -r public/css/* ${{ github.workspace }}/css/ # 复制 CSS 文件到 public/css/ 目录
             echo "CSS files have been copied to ${{ github.workspace }}/css/"
           else
             echo "CSS directory not found"
