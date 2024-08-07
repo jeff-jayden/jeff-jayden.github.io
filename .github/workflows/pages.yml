@@ -35,6 +35,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: List generated static files
+        run: |
+          # 列出构建输出目录的内容，这里假设是 public/
+          echo "Listing contents of the build output directory:"
+          ls -lha public/
       - name: Check and copy CSS files
         run: |
           # 检查本地 CSS 目录是否存在
