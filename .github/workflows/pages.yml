@@ -41,17 +41,6 @@ jobs:
           echo "Listing contents of the build output directory:"
           pwd
           ls -lha public/css
-      - name: Check and copy CSS files
-        run: |
-          # 检查本地 CSS 目录是否存在
-          if [ -d "public/css/" ]; then
-            # 构建输出目录，假设构建脚本输出到 public/ 目录
-            cp -r public/css/* ${{ github.workspace }}/css/ # 复制 CSS 文件到 public/css/ 目录
-            echo "CSS files have been copied to ${{ github.workspace }}/css/"
-          else
-            echo "CSS directory not found"
-            exit 1  # 如果 CSS 目录不存在，退出并标记为失败
-          fi
   deploy:
     needs: build
     permissions:
