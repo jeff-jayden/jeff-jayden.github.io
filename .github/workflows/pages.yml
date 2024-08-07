@@ -41,6 +41,7 @@ jobs:
           echo "Listing contents of the build output directory:"
           pwd
           ls -lha public/
+          ls -lha /
           cat index.html
   deploy:
     needs: build
