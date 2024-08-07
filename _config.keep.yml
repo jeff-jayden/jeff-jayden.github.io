@@ -7,6 +7,8 @@
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/base_info.html
 # ---------------------------------------------------------------------------------------
+language: zh-CN   # 中文简体
+
 base_info:
   # Theme primary color
   primary_color: "#0066cc"
@@ -37,7 +39,7 @@ menu:
   home: /                        || fa-solid fa-home
   archives: /archives            || fa-solid fa-box-archive
   tags: /tags                    || fa-solid fa-tags
-  # categories: /categories     # || fa-solid fa-layer-group
+  categories: /categories        || fa-solid fa-layer-group
   # links: /links               # || fa-solid fa-link
   # photos: /photos             # || fa-solid fa-images
   # tools: /tools               # || fa-solid fa-tools
@@ -59,10 +61,10 @@ first_screen:
 
   # First screen description
   # You can use the "||" to begin a newline, maximum is two lines.
-  description: To be a better man.
+  description: 学习、记录、分享
 
   # If enable hitokoto, first screen description is different every time when you enter the website
-  hitokoto: true      # Option values: true | false
+  hitokoto: false      # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
