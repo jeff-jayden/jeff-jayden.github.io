@@ -39,6 +39,7 @@ jobs:
         run: |
           # 列出构建输出目录的内容，这里假设是 public/
           echo "Listing contents of the build output directory:"
+          pwd
           ls -lha public/css
       - name: Check and copy CSS files
         run: |
