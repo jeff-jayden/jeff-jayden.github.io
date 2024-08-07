@@ -42,7 +42,6 @@ jobs:
           pwd
           ls -alh /home/runner/work/jeff-jayden.github.io/jeff-jayden.github.io/
           ls -lha public/
-          cat index.html
   deploy:
     needs: build
     permissions:
