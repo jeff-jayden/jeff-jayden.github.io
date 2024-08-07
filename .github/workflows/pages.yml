@@ -40,8 +40,8 @@ jobs:
           # 列出构建输出目录的内容，这里假设是 public/
           echo "Listing contents of the build output directory:"
           pwd
+          ls -alh /home/runner/work/jeff-jayden.github.io/jeff-jayden.github.io/
           ls -lha public/
-          ls -lha /
           cat index.html
   deploy:
     needs: build
