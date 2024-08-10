@@ -1,5 +1,7 @@
 ---
-title: promise的使用
+title: Promise
+tags:
+  - Promise
 ---
 
 

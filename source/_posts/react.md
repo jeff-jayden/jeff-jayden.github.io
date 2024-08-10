@@ -1,5 +1,7 @@
 ---
 title: react学习记录
+tags:
+  - React
 ---
 
 # Hooks

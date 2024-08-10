@@ -1,5 +1,7 @@
 ---
 title: typora破解方法
+tags:
+  - 实用软件操作
 ---
 # window
 

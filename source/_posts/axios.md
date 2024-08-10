@@ -1,7 +1,7 @@
 ---
 title: axios的使用
-categories: 
-  - axios
+tags:
+  - Axios
 ---
 
 # Ajax 和 Axios的区别

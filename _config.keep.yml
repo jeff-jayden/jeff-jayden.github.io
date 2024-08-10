@@ -20,13 +20,13 @@ base_info:
   author: Jeff Jayden
 
   # Author avatar, You can use local images path or images link
-  avatar: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/avater.jpg
+  avatar: /images/logo/avater.jpg
 
   # Website LOGO, You can use local images path or images link
-  logo: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/avater.jpg
+  logo: /images/logo/avater.jpg
 
   # Website favicon, You can use local images path or images link
-  favicon: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/avater.jpg
+  favicon: /images/logo/avater.jpg
 
 
 # ---------------------------------------------------------------------------------------
@@ -39,10 +39,10 @@ menu:
   home: /                        || fa-solid fa-home
   archives: /archives            || fa-solid fa-box-archive
   tags: /tags                    || fa-solid fa-tags
-  categories: /categories        || fa-solid fa-layer-group
+  # categories: /categories        || fa-solid fa-layer-group
   # links: /links               # || fa-solid fa-link
   # photos: /photos             # || fa-solid fa-images
-  # tools: /tools               # || fa-solid fa-tools
+  tools: /tools               # || fa-solid fa-tools
   about: /about                  || fa-solid fa-user-graduate
   # ......
 
@@ -320,10 +320,10 @@ pjax:
 # ---------------------------------------------------------------------------------------
 footer:
   since: 2024            # The starting year of your website, Can be null
-  word_count: true      # Option values: true | false
+  word_count: false      # Option values: true | false
 
   site_deploy:
-    enable: true        # Option values: true | false
+    enable: false        # Option values: true | false
     provider: github     # Option values: github | vercel | netlify | cloudflare | gitee | aliyun | tencent_cloud | upyun
     url:                 # Your deployment provider url, Can be null
 

@@ -1,7 +1,7 @@
 ---
 title: javascript学习记录
-categories: 
-  - js
+tags:   
+  - JavaScript
 ---
 
 
