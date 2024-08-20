@@ -144,7 +144,9 @@ for (let i = 0; i < 10; i++) {
 
 一种 函数对象的 __ proto __ ==> Function.prototype
 
-一种 原型对象的 __ proto __ ==> Object.prtotype
+一种 原型对象的 __ proto __ ==> Object.prototype
+
+[下图来源](https://juejin.cn/post/7255605810453217335?searchId=20240819224623005400B7CDE5BA5B584B)
 
 ![image-20240316221910332](C:\Users\20457\AppData\Roaming\Typora\typora-user-images\image-20240316221910332.png)
 
