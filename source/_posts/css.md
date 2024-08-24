@@ -112,11 +112,21 @@ timing-function(动画的速度)
 
 [链接](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
-### justify 横向
+justify-item 横向
 
-### align 纵向
+align-item 纵向
 
+`place-items`属性是`align-items`属性和`justify-items`属性的合并简写形式
 
+```css
+place-items: <align-items> <justify-items>;
+```
+
+`place-content`属性是`align-content`属性和`justify-content`属性的合并简写形式
+
+```css
+place-content: <align-content> <justify-content>
+```
 
 
 
@@ -128,6 +138,8 @@ timing-function(动画的速度)
 
 # [伪类&伪元素](https://www.w3school.com.cn/css/css_pseudo_elements.asp)
 
+: 伪类
+
 `:link`  未浏览
 
 `:visited`  已浏览
@@ -136,9 +148,17 @@ timing-function(动画的速度)
 
 `:active` 点击得时候
 
-: 伪类
+
 
 :: 伪元素
+
+| 选择器                                                       | 例子            | 例子描述                      |
+| :----------------------------------------------------------- | :-------------- | :---------------------------- |
+| [::after](https://www.w3school.com.cn/cssref/selector_after.asp) | p::after        | 在每个 <p> 元素之后插入内容。 |
+| [::before](https://www.w3school.com.cn/cssref/selector_before.asp) | p::before       | 在每个 <p> 元素之前插入内容。 |
+| [::first-letter](https://www.w3school.com.cn/cssref/selector_first-letter.asp) | p::first-letter | 选择每个 <p> 元素的首字母。   |
+| [::first-line](https://www.w3school.com.cn/cssref/selector_first-line.asp) | p::first-line   | 选择每个 <p> 元素的首行。     |
+| [::selection](https://www.w3school.com.cn/cssref/selector_selection.asp) | p::selection    | 选择用户选择的元素部分。      |
 
 
 
