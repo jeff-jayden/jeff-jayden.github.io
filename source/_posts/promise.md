@@ -125,6 +125,10 @@ module.exports = { resolved, rejected, deferred };
 
 # reference
 
+https://mp.weixin.qq.com/s/qdJ0Xd8zTgtetFdlJL3P1g
+
+https://github.com/Lucifier129/promise-aplus-impl/blob/master/src/naive.js
+
 
 
 # 用promise封装ajax请求
