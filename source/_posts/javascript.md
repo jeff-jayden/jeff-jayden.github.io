@@ -1,7 +1,7 @@
 ---
 title: javascript学习记录
-categories: 
-  - js
+tags:   
+  - JavaScript
 ---
 
 
@@ -25,6 +25,13 @@ categories:
    - 内部的函数存在外部作用域的引用就会导致闭包
 
 ![image-20240317135032288](C:\Users\20457\AppData\Roaming\Typora\typora-user-images\image-20240317135032288.png)
+
+
+
+# 基本数据类型，复杂
+
+string，number, boolean, null, undefined, symbol, bigint
+object, function, date
 
 
 
@@ -144,7 +151,9 @@ for (let i = 0; i < 10; i++) {
 
 一种 函数对象的 __ proto __ ==> Function.prototype
 
-一种 原型对象的 __ proto __ ==> Object.prtotype
+一种 原型对象的 __ proto __ ==> Object.prototype
+
+[下图来源](https://juejin.cn/post/7255605810453217335?searchId=20240819224623005400B7CDE5BA5B584B)
 
 ![image-20240316221910332](C:\Users\20457\AppData\Roaming\Typora\typora-user-images\image-20240316221910332.png)
 
@@ -168,11 +177,11 @@ var变量声明提升，函数声明提升，函数内部var声明变量提升
 
 <https://juejin.cn/post/6844903682283143181>
 
-1.this绑定
+1.this绑定是在函数运行时发生的   
 
-在全局执行上下文中，`this` 的值指向全局对象。(在浏览器中，`this`引用 Window 对象)。
+在全局执行上下文中，`this` 的值指向全局对象。(在浏览器中，`this`引用 Window 对象)。 默认
 
-在函数执行上下文中，`this` 的值取决于该函数是如何被调用的。如果它被一个引用对象调用，那么 `this` 会被设置成那个对象，否则 `this` 的值被设置为全局对象或者 `undefined`（在严格模式下）
+在函数执行上下文中，`this` 的值取决于该函数是如何被调用的。如果它被一个引用对象调用，那么 `this` 会被设置成那个对象，否则 `this` 的值被设置为全局对象或者 `undefined`（在严格模式下）  隐式
 
 2.词法环境组件 let const
 
@@ -187,9 +196,13 @@ var变量声明提升，函数声明提升，函数内部var声明变量提升
 
 <https://www.yuque.com/cuggz/interview/vgbphi#e39a6ab8b784fd88bbcf2aeb2ed82b8d>
 
-1.函数 2.方法 3.构造器  4.call apply bind
+优先级：构造器（new）--> call apply bind  --> 方法 -->  函数        new  显式 隐式  默认
 
-优先级：构造器（new）--> call apply bind  --> 方法 -->  函数 
+1.this绑定是在函数运行时发生的   
+
+在全局执行上下文中，`this` 的值指向全局对象。(在浏览器中，`this`引用 Window 对象)。 默认
+
+在函数执行上下文中，`this` 的值取决于该函数是如何被调用的。如果它被一个引用对象调用，那么 `this` 会被设置成那个对象，否则 `this` 的值被设置为全局对象或者 `undefined`（在严格模式下）  隐式
 
 1、fn.call (newThis,params) call函数的第一个参数是this的新指向，后面依次传入函数fn要用到的参数。会立即执行fn函数。
 2、fn.apply (newThis,paramsArr) apply函数的第一个参数是this的新指向,第二个参数是fn要用到的参数数组，会立即执行fn函数。

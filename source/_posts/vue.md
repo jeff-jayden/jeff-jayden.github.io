@@ -1,5 +1,7 @@
 ---
 title: vue学习记录
+tags:
+   - Vue
 ---
 
 

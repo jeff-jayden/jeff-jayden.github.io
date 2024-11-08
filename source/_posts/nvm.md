@@ -1,5 +1,7 @@
 ---
 title: nvm快速安装
+tags:
+  - 实用软件操作
 ---
 
 # Install

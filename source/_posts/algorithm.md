@@ -1,5 +1,7 @@
 ---
 title: 算法总结
+tags: 
+  - Algo
 ---
 
 
