@@ -20,13 +20,13 @@ base_info:
   author: Jeff Jayden
 
   # Author avatar, You can use local images path or images link
-  avatar: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/avater.jpg
+  avatar: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg
 
   # Website LOGO, You can use local images path or images link
-  logo: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/avater.jpg
+  logo: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg
 
   # Website favicon, You can use local images path or images link
-  favicon: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/avater.jpg
+  favicon: https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg
 
 
 # ---------------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ scroll:
   percent: true       # Option values: true | false
 
   # Hide header in top when page scroll
-  hide_header: true    # Option values: true | false
+  hide_header: false    # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
@@ -107,7 +107,7 @@ scroll:
 # ---------------------------------------------------------------------------------------
 home:
   # Website announcement in home page
-  announcement:
+  announcement: 作者本人很有趣噢～ 快来关注他吧～
 
   # Show category in home page post block
   category: true           # Option values: true | false
@@ -117,6 +117,7 @@ home:
 
   # Set the datetime type of home page post block
   post_datetime: updated    # Option values: updated | created
+  post_datetime_format: YYYY-MM-DD HH:mm:ss
 
 
 # ---------------------------------------------------------------------------------------
@@ -197,10 +198,10 @@ website_count:
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
-    enable: false     # Option values: true | false
-    site_uv: false    # Option values: true | false
-    site_pv: false    # Option values: true | false
-    page_pv: false    # Option values: true | false
+    enable: true     # Option values: true | false
+    site_uv: true    # Option values: true | false
+    site_pv: true    # Option values: true | false
+    page_pv: true    # Option values: true | false
 
 
 # ---------------------------------------------------------------------------------------
@@ -214,7 +215,7 @@ local_search:
 
 search:
   path: search.json
-  field: post
+  field: all
   content: true
   format: striptags
 

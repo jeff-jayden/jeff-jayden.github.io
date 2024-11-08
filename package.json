@@ -6,8 +6,10 @@
     "p": "hexo new post",
     "pa": "hexo new page",
     "build": "hexo generate",
+    "dev": "npm run build && npm run server",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "watch": "hexo generate --watch",
     "server": "hexo server -p 5001"
   },
   "hexo": {
