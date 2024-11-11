@@ -1,3 +1,12 @@
+---
+title: tsconfig 配置分类
+comments: true
+date: 2024-11-11 21:36:33
+tags:
+    - ts
+    - 配置
+---
+
 # tsconfig 配置
 
 1. 构建相关
