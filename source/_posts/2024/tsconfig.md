@@ -48,6 +48,7 @@ tags:
 
     - 严格检查
         1. strict //是一组规则的开关，开启 strict 会默认将这些规则全部启用
+        2. skipLibCheck 与 skipDefaultLibCheck // 跳过对类型声明文件的检查
 3. 工程相关
     1. references
     2. composite
