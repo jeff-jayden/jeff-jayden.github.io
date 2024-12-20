@@ -198,13 +198,13 @@ p.then(value => {
 
 ## Promise的基本概念
 
-![image-20210618161125894](http://mdrs.yuanjin.tech/img/20210618161125.png)
+![image-20210618161125894](../images/promise/20210618161125.png)
 
 ## 链式调用规则
 
-![image-20210621103501094](http://mdrs.yuanjin.tech/img/20210621103501.png)
+![image-20210621103501094](../images/propmise/20210621103501.png)
 
-![image-20210621103501094](http://mdrs.yuanjin.tech/img/20210621103501.png)
+![image-20210621103501094](../images/propmise/20210621103501.png)
 
 1. then方法必定会返回一个新的Promise
 
