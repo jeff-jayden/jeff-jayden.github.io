@@ -1,0 +1,5 @@
+:root {
+    --first-screen-font-size: 40px;
+    --first-screen-font-color-light: linear-gradient(90deg,#5D67E8 0%, #ef4444 100%);
+    --post-update-datetime: none;
+}
