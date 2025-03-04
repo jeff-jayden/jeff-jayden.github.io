@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Jeff Jayden">
+    
+    <title>
+        
+            interview_plan |
+        
+        To be a better man
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"To be a better man","author":"Jeff Jayden","avatar":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","logo":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","favicon":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg"},"menu":{"home":"/                        || fa-solid fa-home","archives":"/archives            || fa-solid fa-box-archive","tags":"/tags                    || fa-solid fa-tags","tools":"/tools","about":"/about                  || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"少点犹豫 || 多点执行力","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":"作者本人很有趣噢～ 快来关注他吧～","category":true,"tag":true,"post_datetime":"updated","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":false,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null},"created_datetime_icon":"fa-solid fa-file-pen","updated_datetime_icon":"fa-solid fa-arrows-rotate"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2021,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom.css"],"js":[null]},"language":"zh-CN","search":{"path":"search.json","field":"all","content":true,"format":"striptags"},"root":"","source_data":{"tools":[{"category":"AIGC","anchorId":"QUlHQw0"},{"name":"ChatGPT","link":"https://chat.openai.com/","description":"OpenAI 旗下 AI 聊天对话工具","image":"/images/tools/chatgpt.svg"},{"name":"Gemini","link":"https://gemini.google.com/app","description":"Google 旗下 AI 聊天对话工具","image":"/images/tools/gemini.svg"},{"name":"Kimi","link":"https://kimi.moonshot.cn/","description":"帮你看更大的世界","image":"/images/tools/kimi.svg"},{"name":"Copilot","link":"https://copilot.microsoft.com/","description":"微软旗下的日常 AI 助手","image":"/images/tools/copilot.png"},{"name":"文心一言","link":"https://yiyan.baidu.com/","description":"百度旗下 AI 聊天对话工具","image":"/images/tools/wenxinyiyan.png"},{"name":"通义千问","link":"https://tongyi.aliyun.com/qianwen/","description":"阿里巴巴旗下 AI 聊天对话工具","image":"/images/tools/tongyiqianwen.svg"},{"name":"讯飞星火","link":"https://xinghuo.xfyun.cn/","description":"科大讯飞星火认知 AI 大模型","image":"/images/tools/xinghuo.svg"},{"name":"Midjourney","link":"https://www.midjourney.com/","description":"AI 图像和插画生成工具","image":"/images/tools/midjourney.png"},{"category":"技术社区","anchorId":"JUU2JThBJTgwJUU2JTlDJUFGJUU3JUE0JUJFJUU1JThDJUJB9"},{"name":"稀土掘金","link":"https://juejin.cn/","description":"一个帮助开发者成长的社区","image":"/images/tools/juejin.svg"},{"name":"博客园","link":"https://www.cnblogs.com/","description":"开发者的网上家园","image":"/images/tools/cnblogs.png"},{"name":"StackOverflow","link":"https://stackoverflow.com/","description":"全球最大的技术问答社区","image":"/images/tools/stackoverflow.png"},{"name":"开源中国","link":"https://www.oschina.net/","description":"目前国内最大的开源技术社区","image":"/images/tools/oschina.webp"},{"name":"CSDN","link":"https://www.csdn.net/","description":"中文最大的技术社区","image":"/images/tools/csdn.png"}]},"version":"4.2.3"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               To be a better man
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tools">
+                                
+                                工具
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
+                            
+                            工具
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        interview_plan
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Jeff Jayden</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime">2025-02-25 18:23:48</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
+                <span class="datetime" data-updated="Tue Mar 04 2025 13:29:29 GMT+0000">2025-03-04 13:29:29</span>
+            </span>
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E5%A4%8D%E4%B9%A0/">面试八股复习</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>5.2k 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>19 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>复习路线是啥呢，哎</p>
+<ol>
+<li>实习</li>
+<li>项目</li>
+<li>八股</li>
+<li>算法</li>
+</ol>
+<h1 id="进程和线程的区别"><a href="#进程和线程的区别" class="headerlink" title="进程和线程的区别"></a>进程和线程的区别</h1><ol>
+<li>进程是资源分配的基本单位，具有独立的内存空间和资源，适合资源隔离和资源密集型任务。</li>
+<li>线程是CPU调度的基本单位，共享进程资源，适合并发执行和计算密集型任务。</li>
+</ol>
+<p>我们称已经执行结束但PCB仍存在的进程为僵尸进程，僵尸进程虽然有PCB,但已经不可能再次运行。 </p>
+<p>父进程执行waitpid函数，在读走子进程退出状态和其他信息后，就将其PCB清理掉，让子进程彻</p>
+<p>底消失，完成对已结束子进程的善后处理工作。 </p>
+<p>进程与程序的区别</p>
+<p>了解进程的概念后，现在停下来，确认一下你理解了程序和进程之间的区别：</p>
+<p>(1)程序是永存的，作为源代码或目标模块存在于外存中；进程是暂时的，是程序在数据集上</p>
+<p>的一次执行，有创建，有撤销，存在是暂时的。</p>
+<p>(2)程序是静态的，关机后仍然存在，进程是动态的，有从产生到消亡的生命周期。</p>
+<p>(3)进程具有并发性，而程序没有。</p>
+<p>(4)进程和程序不是一一对应的：一个程序可对应多个进程，即多个进程可执行同一程序；一</p>
+<p>个进程可以执行一个或多个程序。</p>
+<h3 id="进程间通信（IPC）"><a href="#进程间通信（IPC）" class="headerlink" title="进程间通信（IPC）"></a><strong>进程间通信（IPC）</strong></h3><ul>
+<li><p>管道（Pipe&#x2F;FIFO）</p>
+<ul>
+<li><p>无名管道（<code>pipe()</code>）用于父子进程通信；命名管道（<code>mkfifo()</code>）支持无关进程通信。</p>
+</li>
+<li><pre><code class="c">#include &lt;unistd.h&gt;
+#include &lt;stdio.h&gt;
+
+int main() &#123;
+    int fd[2];
+    pipe(fd);  // 创建管道，fd[0]读端，fd[1]写端
+  
+    if (fork() == 0) &#123;  // 子进程
+        close(fd[1]);   // 关闭写端
+        char buf[20];
+        read(fd[0], buf, sizeof(buf));
+        printf(&quot;Child received: %s\n&quot;, buf);
+    &#125; else &#123;            // 父进程
+        close(fd[0]);   // 关闭读端
+        write(fd[1], &quot;Hello from parent&quot;, 17);
+        close(fd[1]);
+    &#125;
+    return 0;
+&#125;
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  - </span><br><span class="line"></span><br><span class="line">- 消息队列</span><br><span class="line"></span><br><span class="line">  - 基于 `msgget()`、`msgsnd()`、`msgrcv()` 实现结构化消息传递。</span><br><span class="line"></span><br><span class="line">  - ```c</span><br><span class="line">    # 发送</span><br><span class="line">    #include &lt;sys/msg.h&gt;</span><br><span class="line">    </span><br><span class="line">    struct msg_buffer &#123;</span><br><span class="line">        long mtype;       // 消息类型（必须为长整型）</span><br><span class="line">        char mtext[100];  // 消息内容</span><br><span class="line">    &#125; message;</span><br><span class="line">    </span><br><span class="line">    int main() &#123;</span><br><span class="line">        // 创建或获取消息队列（键值 1234，权限 0666）</span><br><span class="line">        int msgid = msgget(1234, 0666 | IPC_CREAT);</span><br><span class="line">        message.mtype = 1;  // 设置消息类型（用于接收端过滤）</span><br><span class="line">        strcpy(message.mtext, &quot;Hello via Message Queue&quot;);</span><br><span class="line">        msgsnd(msgid, &amp;message, sizeof(message), 0); // 发送消息（0 表示阻塞发送）</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    # 接收</span><br><span class="line">    int main() &#123;</span><br><span class="line">        int msgid = msgget(1234, 0666); // 获取已有的消息队列</span><br><span class="line">        struct msg_buffer message;</span><br><span class="line">        // 接收类型为 1 的消息（最后一个参数 0 表示阻塞接收）</span><br><span class="line">        msgrcv(msgid, &amp;message, sizeof(message), 1, 0);</span><br><span class="line">        printf(&quot;Received: %s\n&quot;, message.mtext);</span><br><span class="line">        msgctl(msgid, IPC_RMID, NULL); // 删除消息队列</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li></li>
+</ul>
+</li>
+<li><p>共享内存</p>
+<ul>
+<li><p>通过 <code>shmget()</code> 创建共享内存区，<code>shmat()</code>&#x2F;<code>shmdt()</code> 挂接&#x2F;分离内存，高效但需同步机制。</p>
+</li>
+<li><pre><code class="c"># 写入端
+#include &lt;sys/shm.h&gt;
+
+int main() &#123;
+    // 创建共享内存（键值 5678，大小 1024 字节，权限 0666）
+    int shmid = shmget(5678, 1024, 0666 | IPC_CREAT);
+    char *str = (char*)shmat(shmid, NULL, 0); // 将共享内存附加到进程地址空间
+    strcpy(str, &quot;Shared Memory Data&quot;);        // 写入数据
+    shmdt(str);              // 分离共享内存（数据保留在内存中）
+    return 0;
+&#125;
+# 读取端
+int main() &#123;
+    int shmid = shmget(5678, 1024, 0666); // 获取已有共享内存
+    char *str = (char*)shmat(shmid, NULL, 0); // 附加到进程
+    printf(&quot;Read: %s\n&quot;, str);
+    shmdt(str);              // 分离共享内存
+    shmctl(shmid, IPC_RMID, NULL); // 删除共享内存（释放资源）
+    return 0;
+&#125;
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  - </span><br><span class="line"></span><br><span class="line">- 信号量</span><br><span class="line"></span><br><span class="line">  - 使用 `semget()`、`semop()` 控制资源访问，解决进程同步问题（如PV操作）。</span><br><span class="line"></span><br><span class="line">  - ```c</span><br><span class="line">    #include &lt;signal.h&gt;</span><br><span class="line">    #include &lt;unistd.h&gt;</span><br><span class="line">    #include &lt;stdio.h&gt;</span><br><span class="line">    </span><br><span class="line">    void handler(int sig) &#123;</span><br><span class="line">        printf(&quot;Child received SIGUSR1\n&quot;);  // 子进程实际收到信号</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int main() &#123;</span><br><span class="line">        pid_t child_pid;</span><br><span class="line">        signal(SIGUSR1, handler);</span><br><span class="line">      </span><br><span class="line">        child_pid = fork();</span><br><span class="line">        if (child_pid == 0) &#123;       // 子进程</span><br><span class="line">            pause();                // 等待信号</span><br><span class="line">        &#125; else &#123;                    // 父进程</span><br><span class="line">            sleep(1);</span><br><span class="line">            kill(child_pid, SIGUSR1); // 向子进程发送信号</span><br><span class="line">        &#125;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>套接字</p>
+<ul>
+<li><pre><code class="c">#include &lt;sys/socket.h&gt;
+#include &lt;sys/un.h&gt;
+
+int main() &#123;
+    int sockfd = socket(AF_UNIX, SOCK_STREAM, 0); // 创建本地套接字
+    struct sockaddr_un addr;
+    addr.sun_family = AF_UNIX;                   // 使用 Unix 域套接字
+    strcpy(addr.sun_path, &quot;/tmp/mysocket&quot;);      // 绑定到文件路径
+  
+    bind(sockfd, (struct sockaddr*)&amp;addr, sizeof(addr)); // 绑定套接字
+    listen(sockfd, 5);                          // 监听连接（最大队列长度 5）
+    int client = accept(sockfd, NULL, NULL);     // 接受客户端连接
+    send(client, &quot;Hello via Socket&quot;, 16, 0);     // 发送数据
+    close(client);
+    return 0;
+&#125;
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  - </span><br><span class="line"></span><br><span class="line">- IPC综合应用</span><br><span class="line"></span><br><span class="line">  - 结合共享内存和信号量实现进程间数据高效交换。</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">多进程与多线程的区别：可将多进程比喻成把一个大家庭分成很多有独立房屋的小家庭，而将</span><br><span class="line"></span><br><span class="line">多线程比喻成生活在同一屋檐下的家庭成员</span><br><span class="line"></span><br><span class="line">![image-20250303175714103](/Users/admin/Library/Application Support/typora-user-images/image-20250303175714103.png)</span><br><span class="line"></span><br><span class="line"># interface 和 type 的区别</span><br><span class="line">interface：</span><br><span class="line">更适合定义对象的结构。</span><br><span class="line">支持扩展和合并。</span><br><span class="line">更接近于传统面向对象编程中的接口概念。</span><br><span class="line">通常用于描述类的结构或对象的形状。</span><br><span class="line"></span><br><span class="line">type：</span><br><span class="line">更灵活，支持联合类型、交叉类型、函数类型等。</span><br><span class="line">不支持扩展和合并。</span><br><span class="line">适合定义复杂的类型结构或函数类型。</span><br><span class="line"></span><br><span class="line"># map和对象的区别</span><br><span class="line">对象：</span><br><span class="line">键必须是字符串或符号。</span><br><span class="line">默认继承自 Object.prototype，可能包含默认属性。</span><br><span class="line">遍历顺序不确定。</span><br><span class="line">性能在动态操作时可能不如 Map。</span><br><span class="line">适合用作配置对象或实体表示。</span><br><span class="line">Map：</span><br><span class="line">键可以是任意类型。</span><br><span class="line">不继承默认属性，是一个纯粹的键值对集合。</span><br><span class="line">遍历顺序按照插入顺序。</span><br><span class="line">性能在动态操作时更优。</span><br><span class="line">适合处理动态的键值对集合。</span><br><span class="line"></span><br><span class="line"># useContext的弊端</span><br><span class="line">`useContext` 是 React 提供的一种用于跨组件共享状态的 Hook，但它也有一些潜在的弊端和限制，主要体现在性能问题、数据流追踪、以及使用场景的限制上。以下是详细的分析：</span><br><span class="line"></span><br><span class="line">### **1. 性能问题**</span><br><span class="line">- **组件过度渲染**：当 Context 的值发生变化时，所有订阅了该 Context 的组件都会重新渲染，而不管它们是否真正需要这些更新。这可能导致不必要的性能开销，尤其是在组件树较大或组件渲染开销较高时。</span><br><span class="line">- **频繁更新问题**：如果 Context 中的状态频繁变化（如计数器或实时数据），会导致大量组件的频繁重新渲染，影响应用性能。</span><br><span class="line"></span><br><span class="line">### **2. 数据流追踪困难**</span><br><span class="line">- **难以调试**：由于 `useContext` 允许跨组件树共享数据，数据的流向可能变得复杂且难以追踪。这会增加调试的难度，尤其是在大型应用中。</span><br><span class="line">- **组件耦合度高**：使用 `useContext` 时，组件之间可能会因为共享状态而产生隐式耦合，这使得代码的可维护性和可扩展性受到影响。</span><br><span class="line"></span><br><span class="line">### **3. 使用场景的限制**</span><br><span class="line">- **不适合高频更新状态**：对于需要频繁更新的状态（如表单输入或动画），`useContext` 可能不是最佳选择，因为它会导致大量组件的重新渲染。</span><br><span class="line">- **不适合复杂的状态管理**：虽然 `useContext` 可以替代简单的状态管理场景，但对于复杂的状态逻辑（如异步数据加载、中间件等），它可能不如专门的状态管理库（如 Redux）强大。</span><br><span class="line"></span><br><span class="line">### **4. 如何优化或替代**</span><br><span class="line">- **拆分 Context**：将不同的状态拆分到多个独立的 Context 中，避免因单一 Context 的值变化导致大量组件重新渲染。</span><br><span class="line">- **使用 `React.memo` 或 `useMemo`**：对于纯展示组件，可以使用 `React.memo` 来避免不必要的渲染；对于复杂计算或函数，可以使用 `useMemo` 或 `useCallback` 来优化性能。</span><br><span class="line">- **结合 `useReducer`**：对于复杂的状态逻辑，可以结合 `useReducer` 使用 `useContext`，以实现更灵活的状态管理。</span><br><span class="line">- **使用专门的状态管理库**：对于大型应用或复杂的状态管理需求，可以考虑使用 Redux、MobX 等专门的状态管理库。</span><br><span class="line"></span><br><span class="line">### **总结**</span><br><span class="line">`useContext` 是一个强大的工具，适用于简化跨组件的状态共享，但它也有明显的弊端，特别是在性能和调试方面。开发者需要根据具体场景合理使用 `useContext`，并结合其他优化手段或替代方案，以避免潜在问题。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 在一个 ts 的前端项目中，webpack 或者 vite编译源码到最终产物的执行顺序是什么</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">在使用 Webpack 或 Vite 进行前端项目构建时，源码到最终产物的编译执行顺序涉及多个阶段，包括文件解析、依赖处理、代码转换、打包和优化等。以下是两者在构建过程中的大致执行顺序：</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">### Webpack 构建执行顺序</span><br><span class="line">Webpack 是一个模块打包器，它通过配置文件（`webpack.config.js` 或 `webpack.config.ts`）来定义构建过程。以下是 Webpack 构建的主要执行顺序：</span><br><span class="line"></span><br><span class="line">1. **配置加载与解析**：</span><br><span class="line">   - Webpack 首先加载配置文件，解析配置中的 `entry`（入口文件）、`output`（输出路径）、`module`（模块规则）、`plugins`（插件）等选项。</span><br><span class="line"></span><br><span class="line">2. **入口文件解析**：</span><br><span class="line">   - 根据 `entry` 配置，Webpack 开始解析入口文件（通常是 JavaScript 文件，如 `index.js` 或 `main.ts`）。入口文件是构建过程的起点。</span><br><span class="line"></span><br><span class="line">3. **依赖解析**：</span><br><span class="line">   - Webpack 从入口文件开始，递归解析代码中的依赖（如 `import` 或 `require` 语句），构建一个依赖图（Dependency Graph）。这个图包含了项目中所有模块及其相互关系。</span><br><span class="line"></span><br><span class="line">4. **Loader 处理**：</span><br><span class="line">   - 在解析模块时，Webpack 会根据 `module.rules` 配置中的规则，使用对应的 Loader 对文件进行处理。例如：</span><br><span class="line">     - 使用 `ts-loader` 或 `babel-loader` 处理 TypeScript 或 ES6+ 代码。</span><br><span class="line">     - 使用 `style-loader` 和 `css-loader` 处理 CSS 文件。</span><br><span class="line">     - 使用 `file-loader` 或 `url-loader` 处理静态资源（如图片、字体等）。</span><br><span class="line"></span><br><span class="line">5. **插件执行**：</span><br><span class="line">   - 在构建过程中，Webpack 会触发多个生命周期钩子（如 `emit`、`done` 等），插件会在这些钩子上执行特定任务。例如：</span><br><span class="line">     - `HtmlWebpackPlugin` 用于生成 HTML 文件。</span><br><span class="line">     - `MiniCssExtractPlugin` 用于提取 CSS 文件。</span><br><span class="line">     - `TerserPlugin` 用于压缩 JavaScript 代码。</span><br><span class="line"></span><br><span class="line">6. **模块打包**：</span><br><span class="line">   - Webpack 将解析后的模块按照依赖关系打包成一个或多个 bundle 文件。这些文件会根据 `output` 配置输出到指定目录。</span><br><span class="line"></span><br><span class="line">7. **代码优化**：</span><br><span class="line">   - 如果启用了代码分割（Code Splitting），Webpack 会根据配置将代码分割成多个 chunk，以优化加载性能。</span><br><span class="line">   - 如果启用了压缩插件（如 `TerserPlugin` 或 `ESBuildMinifyPlugin`），Webpack 会对代码进行压缩和优化。</span><br><span class="line"></span><br><span class="line">8. **输出最终产物**：</span><br><span class="line">   - 打包后的文件（如 `bundle.js`、`styles.css`、`index.html` 等）会被输出到 `output` 配置指定的目录。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">### Vite 构建执行顺序</span><br><span class="line">Vite 是一个基于 Rollup 的现代前端构建工具，它通过预构建依赖和快速热更新（HMR）来实现快速开发体验。以下是 Vite 构建的主要执行顺序：</span><br><span class="line"></span><br><span class="line">1. **配置加载与解析**：</span><br><span class="line">   - Vite 首先加载配置文件（`vite.config.js` 或 `vite.config.ts`），解析配置中的 `build`、`plugins`、`resolve` 等选项。</span><br><span class="line"></span><br><span class="line">2. **依赖预构建**：</span><br><span class="line">   - 在开发模式下，Vite 会预先构建项目中的依赖（如第三方库）。这些依赖会被编译成一个或多个预构建模块，以加快后续的构建速度。</span><br><span class="line"></span><br><span class="line">3. **文件解析与模块解析**：</span><br><span class="line">   - Vite 从入口文件（如 `index.html` 或 `main.ts`）开始解析项目中的模块。它会递归解析代码中的依赖，构建模块依赖图。</span><br><span class="line"></span><br><span class="line">4. **插件处理**：</span><br><span class="line">   - Vite 提供了丰富的插件系统，插件可以在构建过程中对文件进行处理。例如：</span><br><span class="line">     - `@vitejs/plugin-vue` 用于处理 Vue 文件。</span><br><span class="line">     - `vite-plugin-eslint` 用于集成 ESLint。</span><br><span class="line">     - 自定义插件可以用于处理特定文件类型或执行特定任务。</span><br><span class="line"></span><br><span class="line">5. **代码转换**：</span><br><span class="line">   - Vite 使用 `esbuild` 对代码进行快速转换，支持 TypeScript、JSX 等语法。它会将代码转换为浏览器可执行的 JavaScript。</span><br><span class="line"></span><br><span class="line">6. **静态资源处理**：</span><br><span class="line">   - Vite 会自动处理静态资源（如图片、字体等），并将其输出到构建目录。它还支持资源的内联（base64 编码）或 URL 重写。</span><br><span class="line"></span><br><span class="line">7. **代码分割与优化**：</span><br><span class="line">   - 在生产模式下，Vite 会根据配置对代码进行分割，生成多个 chunk 文件，以优化加载性能。</span><br><span class="line">   - Vite 使用 `terser` 或 `esbuild` 对代码进行压缩和优化。</span><br><span class="line"></span><br><span class="line">8. **输出最终产物**：</span><br><span class="line">   - 构建完成后，Vite 会将输出文件（如 `index.html`、`assets/*.js`、`assets/*.css` 等）保存到 `dist` 目录。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">### 总结</span><br><span class="line">虽然 Webpack 和 Vite 的构建过程在细节上有所不同，但它们的基本逻辑是类似的：从入口文件开始，解析依赖，处理模块，优化代码，最终输出构建产物。Webpack 更灵活，功能强大，但配置相对复杂；Vite 则通过预构建依赖和快速 HMR 提供了更快的开发体验，同时在生产模式下也能生成高效的构建产物。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># webpack 是在什么时候将 ts 文件转换成 js 文件的</span><br><span class="line"></span><br><span class="line">在 Webpack 的构建过程中，TypeScript 文件被转换为 JavaScript 文件的时机是在 **Loader 处理阶段**。具体来说，Webpack 会根据配置文件中的 `module.rules` 规则，使用指定的 Loader（如 `ts-loader` 或 `babel-loader`）来处理 `.ts` 文件。</span><br><span class="line"></span><br><span class="line">以下是详细的处理过程：</span><br><span class="line"></span><br><span class="line">1. **配置 Loader**：</span><br><span class="line">   在 Webpack 配置文件中，需要指定处理 `.ts` 文件的 Loader。例如，使用 `ts-loader` 的配置如下：</span><br><span class="line">   ```javascript</span><br><span class="line">   module.exports = &#123;</span><br><span class="line">     module: &#123;</span><br><span class="line">       rules: [</span><br><span class="line">         &#123;</span><br><span class="line">           test: /\.tsx?$/, // 匹配 .ts 或 .tsx 文件</span><br><span class="line">           use: &#x27;ts-loader&#x27;, // 使用 ts-loader 进行编译</span><br><span class="line">           exclude: /node_modules/, // 排除 node_modules 文件夹</span><br><span class="line">         &#125;,</span><br><span class="line">       ],</span><br><span class="line">     &#125;,</span><br><span class="line">   &#125;;</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+<p> 这里，<code>ts-loader</code> 会调用 TypeScript 编译器（<code>tsc</code>）将 <code>.ts</code> 文件转换为 JavaScript。</p>
+</li>
+</ul>
+<ol start="2">
+<li><p><strong>转换时机</strong>：</p>
+<ul>
+<li>当 Webpack 遍历项目文件并解析依赖时，遇到 <code>.ts</code> 文件时会触发 Loader 的处理。</li>
+<li><code>ts-loader</code> 会读取项目的 <code>tsconfig.json</code> 配置文件，根据其中的编译选项（如目标 JavaScript 版本、模块系统等）将 TypeScript 文件编译为 JavaScript。</li>
+</ul>
+</li>
+<li><p><strong>与 Babel 的结合</strong>：<br>如果项目中同时使用了 Babel，可以通过 <code>babel-loader</code> 和 <code>@babel/preset-typescript</code> 来处理 TypeScript 文件。这种方式可以让 Babel 负责转译 TypeScript 和 ES6+ 语法，而不需要单独使用 <code>ts-loader</code>。</p>
+</li>
+</ol>
+<p>总结来说，Webpack 在构建过程中通过 Loader 处理阶段将 TypeScript 文件转换为 JavaScript 文件，具体转换由 <code>ts-loader</code> 或 <code>babel-loader</code> 完成，取决于项目配置。</p>
+<h1 id="vite-是在什么时候将-ts-文件转换成-js-文件的"><a href="#vite-是在什么时候将-ts-文件转换成-js-文件的" class="headerlink" title="vite 是在什么时候将 ts 文件转换成 js 文件的"></a>vite 是在什么时候将 ts 文件转换成 js 文件的</h1><p>在 Vite 项目中，TypeScript 文件被转换为 JavaScript 文件的过程主要发生在 <strong>开发服务器启动时</strong> 和 <strong>生产构建时</strong>。Vite 使用了 <code>esbuild</code> 作为其默认的 TypeScript 编译工具，因为它比传统的 <code>tsc</code> 或 <code>babel</code> 更快，能够提供即时的编译反馈和热更新（HMR）能力。</p>
+<p>以下是 Vite 在不同阶段处理 TypeScript 文件的具体过程：</p>
+<hr>
+<h3 id="1-开发模式（Development-Mode）"><a href="#1-开发模式（Development-Mode）" class="headerlink" title="1. 开发模式（Development Mode）"></a>1. <strong>开发模式（Development Mode）</strong></h3><p>在开发模式下，Vite 会启动一个开发服务器，监听文件变化并实时编译 TypeScript 文件。以下是关键步骤：</p>
+<h4 id="a-启动开发服务器时"><a href="#a-启动开发服务器时" class="headerlink" title="a. 启动开发服务器时"></a>a. <strong>启动开发服务器时</strong></h4><p>当运行 <code>vite</code> 或 <code>npm run dev</code> 时，Vite 会执行以下操作：</p>
+<ul>
+<li><strong>解析项目配置</strong>：加载 <code>vite.config.ts</code> 或 <code>vite.config.js</code> 文件，解析其中的配置。</li>
+<li><strong>初始化构建环境</strong>：Vite 会初始化一个内部的构建环境，用于处理项目中的文件。</li>
+<li>**启动 <code>esbuild</code>**：Vite 使用 <code>esbuild</code> 来处理 TypeScript 文件。<code>esbuild</code> 会读取项目的 <code>tsconfig.json</code> 配置，并根据配置将 <code>.ts</code> 文件编译为 JavaScript。</li>
+<li><strong>生成内存中的模块</strong>：编译后的 JavaScript 文件会被存储在内存中，而不是直接写入磁盘。这样可以加快热更新的速度。</li>
+</ul>
+<h4 id="b-文件变化时"><a href="#b-文件变化时" class="headerlink" title="b. 文件变化时"></a>b. <strong>文件变化时</strong></h4><p>当开发者修改 <code>.ts</code> 文件时：</p>
+<ul>
+<li><strong>触发热更新（HMR）</strong>：Vite 会检测到文件变化，并重新触发 <code>esbuild</code> 对修改的文件进行编译。</li>
+<li><strong>更新内存中的模块</strong>：重新编译后的模块会替换内存中的旧模块。</li>
+<li><strong>通知浏览器刷新</strong>：Vite 会通过 WebSocket 向浏览器发送更新信号，浏览器会根据 HMR 的规则更新页面。</li>
+</ul>
+<hr>
+<h3 id="2-生产模式（Production-Mode）"><a href="#2-生产模式（Production-Mode）" class="headerlink" title="2. 生产模式（Production Mode）"></a>2. <strong>生产模式（Production Mode）</strong></h3><p>在生产模式下，Vite 会执行完整的构建过程，将项目打包为最终的生产文件。以下是关键步骤：</p>
+<h4 id="a-运行-vite-build"><a href="#a-运行-vite-build" class="headerlink" title="a. 运行 vite build"></a>a. <strong>运行 <code>vite build</code></strong></h4><p>当运行 <code>vite build</code> 时，Vite 会执行以下操作：</p>
+<ul>
+<li><strong>解析项目配置</strong>：加载 <code>vite.config.ts</code> 或 <code>vite.config.js</code> 文件，解析其中的配置。</li>
+<li><strong>预构建依赖</strong>：Vite 会预先构建项目中的第三方依赖，将它们编译为兼容浏览器的格式。</li>
+<li><strong>处理项目文件</strong>：Vite 使用 <code>esbuild</code> 对项目中的 <code>.ts</code> 文件进行编译，将它们转换为 JavaScript。</li>
+<li><strong>代码优化</strong>：Vite 会根据配置对代码进行优化，例如：<ul>
+<li><strong>代码分割</strong>：将代码分割为多个 chunk，以优化加载性能。</li>
+<li><strong>压缩代码</strong>：使用 <code>terser</code> 或其他工具对代码进行压缩。</li>
+</ul>
+</li>
+<li><strong>生成最终产物</strong>：编译后的文件会被输出到 <code>dist</code> 目录。</li>
+</ul>
+<hr>
+<h3 id="Vite-使用-esbuild-的优势"><a href="#Vite-使用-esbuild-的优势" class="headerlink" title="Vite 使用 esbuild 的优势"></a>Vite 使用 <code>esbuild</code> 的优势</h3><ol>
+<li><strong>高性能</strong>：<code>esbuild</code> 是用 Go 语言编写的，编译速度比传统的 <code>tsc</code> 或 <code>babel</code> 快得多。</li>
+<li><strong>即时反馈</strong>：<code>esbuild</code> 能够快速编译 TypeScript 文件，并在开发模式下提供即时的错误提示和热更新。</li>
+<li><strong>集成性</strong>：Vite 将 <code>esbuild</code> 集成到其构建流程中，开发者无需额外配置，即可享受高效的 TypeScript 支持。</li>
+</ol>
+<hr>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>Vite 在开发模式下通过 <code>esbuild</code> 动态编译 TypeScript 文件，并将结果存储在内存中，以支持快速的热更新。在生产模式下，Vite 会在构建过程中将 TypeScript 文件转换为 JavaScript，并进行优化和打包。整个过程是自动化的，开发者无需手动配置编译工具，这使得 Vite 的开发体验非常流畅。</p>
+<h1 id="es-cjs-amd-umd"><a href="#es-cjs-amd-umd" class="headerlink" title="es cjs amd umd"></a>es cjs amd umd</h1><p>cjs:</p>
+<ol>
+<li>node 专用格式</li>
+<li>require module.exports</li>
+<li>同步加载模块的方式  运行时加载</li>
+<li>输出的是一个值的拷贝</li>
+</ol>
+<p>amd 异步模块定义 浏览器:</p>
+<ol>
+<li>通过define来定义模块，使用require来异步加载模块</li>
+<li>require 多用于解决循环依赖中，在运行时加载文件</li>
+</ol>
+<p>umd Universal Module Definition: </p>
+<ol>
+<li>通用的模块规范 包含CommonJS、AMD</li>
+<li></li>
+</ol>
+<p>es：</p>
+<ol>
+<li>浏览器专用格式</li>
+<li>支持静态分析 利于 tree-shaking 编译时加载</li>
+<li>异步导入</li>
+<li>import export</li>
+<li>输出的是值的引用</li>
+</ol>
+<h3 id="XSS-攻击的本质手段"><a href="#XSS-攻击的本质手段" class="headerlink" title="XSS 攻击的本质手段"></a>XSS 攻击的本质手段</h3><ul>
+<li><strong>利用输入输出漏洞</strong>：目标网站对用户输入没有进行充分的过滤和验证，以及对输出到页面的数据没有进行适当的编码处理。攻击者借此输入恶意脚本，如 JavaScript 代码，当网站将这些未处理的恶意内容输出到其他用户的浏览器时，浏览器会将其解析并执行，从而导致攻击成功。</li>
+<li><strong>突破同源策略限制</strong>：同源策略是浏览器的一种安全机制，用于限制不同源的页面之间的交互。但 XSS 攻击通过在目标网站注入脚本，使恶意脚本在目标网站的源下执行，从而绕过同源策略的限制。这样恶意脚本就能够获取目标网站的敏感信息，如用户的登录凭证、个人数据等，或者执行一些对用户有害的操作，如修改页面内容、发起钓鱼攻击等。</li>
+</ul>
+<h3 id="CSRF-攻击的本质手段"><a href="#CSRF-攻击的本质手段" class="headerlink" title="CSRF 攻击的本质手段"></a>CSRF 攻击的本质手段</h3><ul>
+<li><strong>伪装合法请求</strong>：攻击者利用用户在目标网站已登录的状态，构造一个看似合法的请求。这个请求可能看起来像是用户主动发起的正常操作，例如转账、修改密码等，但实际上是攻击者在用户不知情的情况下诱导浏览器发送的。攻击者通常会在恶意网站或邮件等地方隐藏这些伪造的请求，当用户访问恶意内容时，浏览器会自动发送这些请求到目标网站。</li>
+<li><strong>利用用户身份凭证</strong>：用户在登录目标网站后，浏览器会保存用户的身份凭证，如 cookie、会话令牌等。CSRF 攻击的核心就是利用这些身份凭证，在用户没有主动操作的情况下，让浏览器携带这些凭证向目标网站发送请求。由于服务器只验证请求中携带的身份凭证是否有效，而不会验证请求是否真的是用户主动发起的，所以攻击者能够以用户的身份执行操作，达到篡改用户数据、执行恶意交易等目的</li>
+</ul>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E5%A4%8D%E4%B9%A0/">面试八股复习</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2025/03/02/2025/docker-nginx/"
+                                   title="docker_nginx"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">docker_nginx</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2025/01/05/2024/%E6%89%8B%E6%92%95%E9%A2%98/"
+                                   title="手撕题"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">手撕题</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">进程和线程的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%88IPC%EF%BC%89"><span class="nav-text">进程间通信（IPC）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vite-%E6%98%AF%E5%9C%A8%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%B0%86-ts-%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2%E6%88%90-js-%E6%96%87%E4%BB%B6%E7%9A%84"><span class="nav-text">vite 是在什么时候将 ts 文件转换成 js 文件的</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%EF%BC%88Development-Mode%EF%BC%89"><span class="nav-text">1. 开发模式（Development Mode）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-%E5%90%AF%E5%8A%A8%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6"><span class="nav-text">a. 启动开发服务器时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-%E6%96%87%E4%BB%B6%E5%8F%98%E5%8C%96%E6%97%B6"><span class="nav-text">b. 文件变化时</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%EF%BC%88Production-Mode%EF%BC%89"><span class="nav-text">2. 生产模式（Production Mode）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-%E8%BF%90%E8%A1%8C-vite-build"><span class="nav-text">a. 运行 vite build</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vite-%E4%BD%BF%E7%94%A8-esbuild-%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-text">Vite 使用 esbuild 的优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#es-cjs-amd-umd"><span class="nav-text">es cjs amd umd</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XSS-%E6%94%BB%E5%87%BB%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%89%8B%E6%AE%B5"><span class="nav-text">XSS 攻击的本质手段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSRF-%E6%94%BB%E5%87%BB%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%89%8B%E6%AE%B5"><span class="nav-text">CSRF 攻击的本质手段</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2021</span>&nbsp;-&nbsp;2025
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Jeff Jayden</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            本站由 <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/brands/github.png"></span> 提供部署服务
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">访问量</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">进程和线程的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%88IPC%EF%BC%89"><span class="nav-text">进程间通信（IPC）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vite-%E6%98%AF%E5%9C%A8%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%B0%86-ts-%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2%E6%88%90-js-%E6%96%87%E4%BB%B6%E7%9A%84"><span class="nav-text">vite 是在什么时候将 ts 文件转换成 js 文件的</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%EF%BC%88Development-Mode%EF%BC%89"><span class="nav-text">1. 开发模式（Development Mode）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-%E5%90%AF%E5%8A%A8%E5%BC%80%E5%8F%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6"><span class="nav-text">a. 启动开发服务器时</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-%E6%96%87%E4%BB%B6%E5%8F%98%E5%8C%96%E6%97%B6"><span class="nav-text">b. 文件变化时</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%EF%BC%88Production-Mode%EF%BC%89"><span class="nav-text">2. 生产模式（Production Mode）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-%E8%BF%90%E8%A1%8C-vite-build"><span class="nav-text">a. 运行 vite build</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vite-%E4%BD%BF%E7%94%A8-esbuild-%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-text">Vite 使用 esbuild 的优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#es-cjs-amd-umd"><span class="nav-text">es cjs amd umd</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XSS-%E6%94%BB%E5%87%BB%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%89%8B%E6%AE%B5"><span class="nav-text">XSS 攻击的本质手段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSRF-%E6%94%BB%E5%87%BB%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%89%8B%E6%AE%B5"><span class="nav-text">CSRF 攻击的本质手段</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>
