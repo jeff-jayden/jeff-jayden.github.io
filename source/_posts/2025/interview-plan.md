@@ -19,6 +19,190 @@ tags: 面试八股复习
 1. 进程是资源分配的基本单位，具有独立的内存空间和资源，适合资源隔离和资源密集型任务。
 2. 线程是CPU调度的基本单位，共享进程资源，适合并发执行和计算密集型任务。
 
+我们称已经执行结束但PCB仍存在的进程为僵尸进程，僵尸进程虽然有PCB,但已经不可能再次运行。 
+
+父进程执行waitpid函数，在读走子进程退出状态和其他信息后，就将其PCB清理掉，让子进程彻
+
+底消失，完成对已结束子进程的善后处理工作。 
+
+进程与程序的区别
+
+了解进程的概念后，现在停下来，确认一下你理解了程序和进程之间的区别：
+
+(1)程序是永存的，作为源代码或目标模块存在于外存中；进程是暂时的，是程序在数据集上
+
+的一次执行，有创建，有撤销，存在是暂时的。
+
+(2)程序是静态的，关机后仍然存在，进程是动态的，有从产生到消亡的生命周期。
+
+(3)进程具有并发性，而程序没有。
+
+(4)进程和程序不是一一对应的：一个程序可对应多个进程，即多个进程可执行同一程序；一
+
+个进程可以执行一个或多个程序。
+
+
+
+### **进程间通信（IPC）**
+
+- 管道（Pipe/FIFO）
+
+  - 无名管道（`pipe()`）用于父子进程通信；命名管道（`mkfifo()`）支持无关进程通信。
+
+  - ```c
+    #include <unistd.h>
+    #include <stdio.h>
+    
+    int main() {
+        int fd[2];
+        pipe(fd);  // 创建管道，fd[0]读端，fd[1]写端
+      
+        if (fork() == 0) {  // 子进程
+            close(fd[1]);   // 关闭写端
+            char buf[20];
+            read(fd[0], buf, sizeof(buf));
+            printf("Child received: %s\n", buf);
+        } else {            // 父进程
+            close(fd[0]);   // 关闭读端
+            write(fd[1], "Hello from parent", 17);
+            close(fd[1]);
+        }
+        return 0;
+    }
+    ```
+
+  - 
+
+- 消息队列
+
+  - 基于 `msgget()`、`msgsnd()`、`msgrcv()` 实现结构化消息传递。
+
+  - ```c
+    # 发送
+    #include <sys/msg.h>
+    
+    struct msg_buffer {
+        long mtype;       // 消息类型（必须为长整型）
+        char mtext[100];  // 消息内容
+    } message;
+    
+    int main() {
+        // 创建或获取消息队列（键值 1234，权限 0666）
+        int msgid = msgget(1234, 0666 | IPC_CREAT);
+        message.mtype = 1;  // 设置消息类型（用于接收端过滤）
+        strcpy(message.mtext, "Hello via Message Queue");
+        msgsnd(msgid, &message, sizeof(message), 0); // 发送消息（0 表示阻塞发送）
+        return 0;
+    }
+    
+    # 接收
+    int main() {
+        int msgid = msgget(1234, 0666); // 获取已有的消息队列
+        struct msg_buffer message;
+        // 接收类型为 1 的消息（最后一个参数 0 表示阻塞接收）
+        msgrcv(msgid, &message, sizeof(message), 1, 0);
+        printf("Received: %s\n", message.mtext);
+        msgctl(msgid, IPC_RMID, NULL); // 删除消息队列
+        return 0;
+    }
+    ```
+
+  - 
+
+- 共享内存
+
+  - 通过 `shmget()` 创建共享内存区，`shmat()`/`shmdt()` 挂接/分离内存，高效但需同步机制。
+
+  - ```c
+    # 写入端
+    #include <sys/shm.h>
+    
+    int main() {
+        // 创建共享内存（键值 5678，大小 1024 字节，权限 0666）
+        int shmid = shmget(5678, 1024, 0666 | IPC_CREAT);
+        char *str = (char*)shmat(shmid, NULL, 0); // 将共享内存附加到进程地址空间
+        strcpy(str, "Shared Memory Data");        // 写入数据
+        shmdt(str);              // 分离共享内存（数据保留在内存中）
+        return 0;
+    }
+    # 读取端
+    int main() {
+        int shmid = shmget(5678, 1024, 0666); // 获取已有共享内存
+        char *str = (char*)shmat(shmid, NULL, 0); // 附加到进程
+        printf("Read: %s\n", str);
+        shmdt(str);              // 分离共享内存
+        shmctl(shmid, IPC_RMID, NULL); // 删除共享内存（释放资源）
+        return 0;
+    }
+    ```
+
+  - 
+
+- 信号量
+
+  - 使用 `semget()`、`semop()` 控制资源访问，解决进程同步问题（如PV操作）。
+
+  - ```c
+    #include <signal.h>
+    #include <unistd.h>
+    #include <stdio.h>
+    
+    void handler(int sig) {
+        printf("Child received SIGUSR1\n");  // 子进程实际收到信号
+    }
+    
+    int main() {
+        pid_t child_pid;
+        signal(SIGUSR1, handler);
+      
+        child_pid = fork();
+        if (child_pid == 0) {       // 子进程
+            pause();                // 等待信号
+        } else {                    // 父进程
+            sleep(1);
+            kill(child_pid, SIGUSR1); // 向子进程发送信号
+        }
+        return 0;
+    }
+    ```
+
+- 套接字
+
+  - ```c
+    #include <sys/socket.h>
+    #include <sys/un.h>
+    
+    int main() {
+        int sockfd = socket(AF_UNIX, SOCK_STREAM, 0); // 创建本地套接字
+        struct sockaddr_un addr;
+        addr.sun_family = AF_UNIX;                   // 使用 Unix 域套接字
+        strcpy(addr.sun_path, "/tmp/mysocket");      // 绑定到文件路径
+      
+        bind(sockfd, (struct sockaddr*)&addr, sizeof(addr)); // 绑定套接字
+        listen(sockfd, 5);                          // 监听连接（最大队列长度 5）
+        int client = accept(sockfd, NULL, NULL);     // 接受客户端连接
+        send(client, "Hello via Socket", 16, 0);     // 发送数据
+        close(client);
+        return 0;
+    }
+    ```
+
+  - 
+
+- IPC综合应用
+
+  - 结合共享内存和信号量实现进程间数据高效交换。
+
+    
+
+
+
+多进程与多线程的区别：可将多进程比喻成把一个大家庭分成很多有独立房屋的小家庭，而将
+
+多线程比喻成生活在同一屋檐下的家庭成员
+
+![image-20250303175714103](/Users/admin/Library/Application Support/typora-user-images/image-20250303175714103.png)
+
 # interface 和 type 的区别
 interface：
 更适合定义对象的结构。

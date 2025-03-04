@@ -5,6 +5,48 @@ tags:
    - Http
 ---
 
+# http 版本区别 （阻塞 连接快慢）
+
+1.1比较 1.0：
+
+1. 长连接
+
+2. 缓存处理
+
+   1. 协商缓存
+
+      1. Last_modified    if-modified-since
+
+      2. etag  if-none-match
+
+    	2. 强缓存
+        1. expires
+        2. Cache-control  max-age
+
+
+
+2.0 比较 1.1
+
+1. 头部压缩
+   1. Hpack 算法
+      1. 静态字典；
+      2. 动态字典；
+      3. Huffman 编码（压缩算法）
+
+2. 二进制帧
+3. 多路复用
+4. 服务端主动推送
+
+3.0 比较 2.0
+
+1. 基于udp，给每个 stream 加一个滑动窗口的 quic 协议
+
+怎么保证数据包内容一致
+
+1. 引入 frame header 这一层 **通过 Stream ID + Offset 字段信息实现数据的有序性**
+2. QUIC使用的Packet Number单调递增的设计，可以让数据包不再像TCP那样必须有序确认，QUIC支持乱序确认，当数据包Packet N丢失后，只要有新的已接收数据包确认，当前窗口就会继续向右滑动
+
+
 
 # tcp协议是如何实现稳定传输的
 
