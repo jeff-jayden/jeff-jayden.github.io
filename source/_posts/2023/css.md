@@ -113,9 +113,7 @@ timing-function(动画的速度)
 
 [链接](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
-justify-item 横向
-
-align-item 纵向
+align-item 纵向  justify-item 横向
 
 `place-items`属性是`align-items`属性和`justify-items`属性的合并简写形式
 
@@ -128,6 +126,14 @@ place-items: <align-items> <justify-items>;
 ```css
 place-content: <align-content> <justify-content>
 ```
+
+grid-row  1/3   1/span 2
+
+grid-column
+
+grid-area  左上角点位置，右下角位置开区间，不包含  1/2/5/6    [(1,2)到(5,6))这个区域
+
+`grid-gap` 属性是 grid-row-gap 和 grid-column-gap 属性的简写属性
 
 
 
