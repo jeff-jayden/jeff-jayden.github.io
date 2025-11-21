@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Jeff Jayden">
+    
+    <title>
+        
+            vue学习记录 |
+        
+        To be a better man
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"To be a better man","author":"Jeff Jayden","avatar":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","logo":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","favicon":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg"},"menu":{"home":"/                        || fa-solid fa-home","archives":"/archives            || fa-solid fa-box-archive","tags":"/tags                    || fa-solid fa-tags","tools":"/tools","about":"/about                  || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"少点犹豫 || 多点执行力","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":"作者本人很有趣噢～ 快来关注他吧～","category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":false,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null},"created_datetime_icon":"fa-solid fa-file-pen","updated_datetime_icon":"fa-solid fa-arrows-rotate"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2021,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom.css"],"js":[null]},"language":"zh-CN","search":{"path":"search.json","field":"all","content":true,"format":"striptags"},"root":"","source_data":{"tools":[{"category":"AIGC","anchorId":"QUlHQw0"},{"name":"ChatGPT","link":"https://chat.openai.com/","description":"OpenAI 旗下 AI 聊天对话工具","image":"/images/tools/chatgpt.svg"},{"name":"Gemini","link":"https://gemini.google.com/app","description":"Google 旗下 AI 聊天对话工具","image":"/images/tools/gemini.svg"},{"name":"Kimi","link":"https://kimi.moonshot.cn/","description":"帮你看更大的世界","image":"/images/tools/kimi.svg"},{"name":"Copilot","link":"https://copilot.microsoft.com/","description":"微软旗下的日常 AI 助手","image":"/images/tools/copilot.png"},{"name":"文心一言","link":"https://yiyan.baidu.com/","description":"百度旗下 AI 聊天对话工具","image":"/images/tools/wenxinyiyan.png"},{"name":"通义千问","link":"https://tongyi.aliyun.com/qianwen/","description":"阿里巴巴旗下 AI 聊天对话工具","image":"/images/tools/tongyiqianwen.svg"},{"name":"讯飞星火","link":"https://xinghuo.xfyun.cn/","description":"科大讯飞星火认知 AI 大模型","image":"/images/tools/xinghuo.svg"},{"name":"Midjourney","link":"https://www.midjourney.com/","description":"AI 图像和插画生成工具","image":"/images/tools/midjourney.png"},{"category":"技术社区","anchorId":"JUU2JThBJTgwJUU2JTlDJUFGJUU3JUE0JUJFJUU1JThDJUJB9"},{"name":"稀土掘金","link":"https://juejin.cn/","description":"一个帮助开发者成长的社区","image":"/images/tools/juejin.svg"},{"name":"博客园","link":"https://www.cnblogs.com/","description":"开发者的网上家园","image":"/images/tools/cnblogs.png"},{"name":"StackOverflow","link":"https://stackoverflow.com/","description":"全球最大的技术问答社区","image":"/images/tools/stackoverflow.png"},{"name":"开源中国","link":"https://www.oschina.net/","description":"目前国内最大的开源技术社区","image":"/images/tools/oschina.webp"},{"name":"CSDN","link":"https://www.csdn.net/","description":"中文最大的技术社区","image":"/images/tools/csdn.png"}]},"version":"4.2.3"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               To be a better man
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tools">
+                                
+                                工具
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
+                            
+                            工具
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        vue学习记录
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Jeff Jayden</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime">2024-01-23 15:13:34</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
+                <span class="datetime" data-updated="Fri Nov 21 2025 08:58:05 GMT+0000">2025-11-21 08:58:05</span>
+            </span>
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Vue/">Vue</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>2.1k 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>7 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="vue的优势"><a href="#vue的优势" class="headerlink" title="vue的优势"></a>vue的优势</h1><ol>
+<li>轻量级框架：Vue.js 是一个轻量级的框架，文件大小小，易于上手和学习</li>
+<li>简单易学：Vue.js 的语法简单直观，易于理解和掌握</li>
+<li>双向数据绑定：Vue.js 支持双向数据绑定，使得数据的变化能够自动反映在视图上，同时视图的变化也能自动更新到数据层</li>
+<li>组件化：Vue.js 支持组件化开发，能够将页面拆分成多个独立的、可复用的组件，便于开发和维护</li>
+<li>数据和结构的分离：Vue.js 支持将数据和结构分离，使得前端开发更加清晰和高效</li>
+<li>虚拟DOM：Vue.js 使用虚拟DOM 技术，能够最大限度地减少对实际DOM的操作，提高性能</li>
+</ol>
+<h1 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h1><p>Vuex是一个专为Vue.js应用程序开发的状态管理模式+库，用于集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化. 它解决了多个组件共享状态时可能遇到的问题，如多个视图依赖于同一状态、来自不同视图的行为需要变更同一状态等 在大型项目中，Vuex能够高效实现组件之间的数据共享，提高开发效率，且存储在Vuex中的数据都是响应式的，能够实时保持数据与页面的同步 因此，Vuex的作用是实现组件全局状态（数据）管理的一种机制，方便实现组件之间数据的共享，解决了组件之间统一状态的共享问题，实现组件之间的数据持久化</p>
+<h1 id="ssr"><a href="#ssr" class="headerlink" title="ssr"></a>ssr</h1><p>SSR（Server-Side Rendering）是一种前端渲染技术，它在服务器端生成页面的 HTML，并将其发送给客户端进行显示。相对于传统的客户端渲染（CSR，Client-Side Rendering），SSR 提供了一些优势和改进：</p>
+<ol>
+<li><strong>SEO（搜索引擎优化）：</strong> 由于搜索引擎爬虫更容易处理服务器端生成的 HTML，SSR 有助于提高页面的搜索引擎排名，而不是依赖于客户端执行 JavaScript。</li>
+<li><strong>首屏加载性能：</strong> SSR 可以在页面加载时直接提供完整的 HTML，无需等待客户端渲染完成。这有助于减少首屏加载时间，提高用户体验。</li>
+<li><strong>性能优化：</strong> 对于一些内容静态的页面或者对用户请求较为频繁的页面，SSR 可以减轻客户端的渲染负担，提高页面性能。</li>
+<li><strong>社交分享等预览信息：</strong> 一些社交分享平台，如 Facebook、Twitter，能够获取服务器端生成的 HTML 中的预览信息，从而提供更好的社交分享效果</li>
+</ol>
+<h1 id="vue-router的两种模式，原理"><a href="#vue-router的两种模式，原理" class="headerlink" title="vue-router的两种模式，原理"></a>vue-router的两种模式，原理</h1><p>Vue Router 提供了两种路由模式：哈希模式（Hash mode）和历史模式（History mode）。</p>
+<ol>
+<li><p><strong>哈希模式（Hash mode）：</strong></p>
+<ul>
+<li><p><strong>原理：</strong> 在浏览器 URL 中的 <code>#</code> 符号后面的部分被称为哈希（hash），<strong>哈希模式通过监听浏览器的 <code>hashchange</code> 事件来实现路由切换</strong>。例如，<code>http://example.com/#/path</code>。</p>
+</li>
+<li><p><strong>优点：</strong> 不需要服务器配置，适用于单页应用。<strong>哈希部分的改变不会导致浏览器向服务器发起请求</strong>，可以避免一些问题，比如在没有配置服务器支持时刷新页面不会导致404错误。</p>
+</li>
+<li><p><strong>缺点：</strong> 带有 <code>#</code> 符号，看起来不够友好；对于一些搜索引擎爬虫，哈希部分不会被发送到服务器，可能<strong>对 SEO 不够友好</strong>。</p>
+</li>
+<li><p><strong>配置：</strong> 在创建 <code>VueRouter</code> 实例时，通过 <code>mode: &#39;hash&#39;</code> 来启用哈希模式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">javascriptCopy codeconst router = new VueRouter(&#123;</span><br><span class="line">  mode: &#x27;hash&#x27;,</span><br><span class="line">  routes: [...]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>历史模式（History mode）：</strong></p>
+<ul>
+<li><p><strong>原理：</strong> 利用 HTML5 History API 中的 <code>pushState</code> 和 <code>replaceState</code> 方法，History 模式实现了无需 <code>#</code> 符号的路由。例如，<code>http://example.com/path</code>。</p>
+</li>
+<li><p><strong>优点：</strong> URL 看起来更加干净，去除了 <code>#</code> 符号；对于一些搜索引擎爬虫更友好。</p>
+</li>
+<li><p><strong>缺点：</strong> 需要服务器配置，确保在除基本路由之外的所有路由返回同一个 HTML 文件；刷新页面或直接访问某个路由时，会向服务器发送请求，需要服务器支持。</p>
+</li>
+<li><p><strong>配置：</strong> 在创建 <code>VueRouter</code> 实例时，通过 <code>mode: &#39;history&#39;</code> 来启用历史模式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">javascriptCopy codeconst router = new VueRouter(&#123;</span><br><span class="line">  mode: &#x27;history&#x27;,</span><br><span class="line">  routes: [...]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h1 id="vuex在刷新页面的时候-会清除保存的数据嘛-为什么"><a href="#vuex在刷新页面的时候-会清除保存的数据嘛-为什么" class="headerlink" title="vuex在刷新页面的时候 会清除保存的数据嘛 为什么"></a>vuex在刷新页面的时候 会清除保存的数据嘛 为什么</h1><p>当你刷新页面时，Vuex保存的数据会被清除。这是因为 Vuex 的状态保存在内存中，当页面刷新时，应用会重新加载，Vuex 的状态也会被清除，并重新初始化状态。</p>
+<p>这是JavaScript和 Vuex设计的固有特性</p>
+<h1 id="nextick"><a href="#nextick" class="headerlink" title="nextick"></a><a class="link"   target="_blank" rel="noopener" href="https://juejin.cn/post/7331591798332424201?searchId=2024041923495759324E6AAAAAB6B861AC" >nextick<i class="fas fa-external-link-alt"></i></a></h1><p><img   src="C:\Users\20457\AppData\Roaming\Typora\typora-user-images\image-20240419235355364.png"  alt="image-20240419235355364"></p>
+<p>它允许你等待Vue完成DOM的更新，然后执行某些操作</p>
+<p>当你在Vue组件中更改数据时，视图不会立即更新，而是异步更新。为了获得更新后的DOM状态，在更新数据之后立即查询DOM可能是不准确的。<code>nextTick</code>就是用来解决这个问题的。</p>
+<h1 id="v-if-v-show"><a href="#v-if-v-show" class="headerlink" title="v-if&amp;v-show"></a>v-if&amp;v-show</h1><h2 id="使用v-show替代v-if"><a href="#使用v-show替代v-if" class="headerlink" title="使用v-show替代v-if"></a>使用v-show替代v-if</h2><p>对于频繁切换显示状态的元素，使用v-show可以保证虚拟dom树的稳定，避免频繁的新增和删除元素，特别是对于那些内部包含大量dom元素的节点，这一点极其重要</p>
+<p>关键字：频繁切换显示状态、内部包含大量dom元素</p>
+<h1 id="组件封装"><a href="#组件封装" class="headerlink" title="组件封装"></a>组件封装</h1><p>当使用Element UI框架进行组件封装时，经常需要考虑到底层组件的属性或插槽可能会发生变化的情况。要在不改变已封装组件的基础上实现兼容性，可以考虑以下几种方法：</p>
+<ol>
+<li><p><strong>属性透传（Prop Forwarding）</strong>：</p>
+<p>利用<code>v-bind</code>的对象语法或使用<code>$attrs</code>对象将接收到的所有属性传递给子组件。这种方法确保了任何额外的属性都能传递给底层组件，即使这些属性在封装组件时没有明确声明。</p>
+</li>
+</ol>
+<p>​	v-bind&#x3D;”$attrs”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;el-button v-bind=&quot;$attrs&quot;&gt;&#123;&#123; content &#125;&#125;&lt;/el-button&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol>
+<li><strong>插槽透传（Slot Forwarding）</strong>：<br>使用<code>&lt;slot&gt;</code>元素可以将内容分发至底层组件的对应插槽。使用 <code>&lt;template&gt;</code> 标签和 <code>v-slot</code> 指令可以将封装组件接收的插槽内容透传到底层组件。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;el-dialog&gt;</span><br><span class="line">    &lt;!-- 默认插槽内容 --&gt;</span><br><span class="line">    &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line">    &lt;!-- 具名插槽内容 --&gt;</span><br><span class="line">    &lt;template v-slot:footer&gt;</span><br><span class="line">      &lt;slot name=&quot;footer&quot;&gt;&lt;/slot&gt;</span><br><span class="line">    &lt;/template&gt;</span><br><span class="line">  &lt;/el-dialog&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol>
+<li><strong>监听属性变化</strong>：<br>如果是预料到某些属性可能会发生变化，可以在封装组件中使用<code>watch</code>监听这些属性，然后做出相应的处理。</li>
+<li><strong>文档和版本兼容性声明</strong>：<br>在封装组件的文档中明确声明组件兼容的Element UI版本，并及时更新兼容性信息。这样使用者就可以意识到可能存在的限制，并根据需要进行调整。</li>
+<li><strong>封装扩展插槽（Scoped Slots）</strong>：<br>如果Element的组件更新了插槽，可以通过增加扩展插槽来兼容新的功能，同时保持向后兼容。</li>
+<li><strong>保持更新</strong>：<br>关注Element UI框架的更新，特别是破坏性更新（breaking changes）。当框架更新时，及时检查封装的组件，并对必要的部分做适配和兼容性调整。</li>
+<li><strong>使用事件发射（Event Emitting）</strong>：<br>在某些情况下，如果底层组件的事件发生了改变，通过在封装组件中监听这些事件并重新发射（emit）可以保证外部可以正常监听到。</li>
+<li><strong>提供配置选项</strong>：<br>对于封装组件，可以提供一些配置选项，使得使用者在使用时能够调整这些配置以应对底层组件的变化。</li>
+</ol>
+<h1 id="vue中key的作用"><a href="#vue中key的作用" class="headerlink" title="vue中key的作用"></a>vue中key的作用</h1><p>key是给每一个vnode的唯一id，可以依靠key，更准确，更快的拿到oldVnode中对应的vnode节点 提高虚拟dom的更新 触发过渡效果</p>
+<p>结论:   如果key没有发生变化，元素不会销毁重建</p>
+<p>​			如果是组件，不会触发生命周期的勾子函数</p>
+<h1 id="在生命周期的表现"><a href="#在生命周期的表现" class="headerlink" title="在生命周期的表现"></a>在生命周期的表现</h1><ol>
+<li>beforeCreate: 可以拿到 props</li>
+<li>created: 可以拿到 data, methods, watch, computed</li>
+</ol>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Vue/">Vue</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/03/09/2024/p10k/"
+                                   title="zsh主题p10k快速安装"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">zsh主题p10k快速安装</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2023/11/09/2023/axios/"
+                                   title="axios的使用"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">axios的使用</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vue%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-text">vue的优势</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vuex"><span class="nav-text">Vuex</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ssr"><span class="nav-text">ssr</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vue-router%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%A8%A1%E5%BC%8F%EF%BC%8C%E5%8E%9F%E7%90%86"><span class="nav-text">vue-router的两种模式，原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vuex%E5%9C%A8%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%97%B6%E5%80%99-%E4%BC%9A%E6%B8%85%E9%99%A4%E4%BF%9D%E5%AD%98%E7%9A%84%E6%95%B0%E6%8D%AE%E5%98%9B-%E4%B8%BA%E4%BB%80%E4%B9%88"><span class="nav-text">vuex在刷新页面的时候 会清除保存的数据嘛 为什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nextick"><span class="nav-text">nextick</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v-if-v-show"><span class="nav-text">v-if&amp;v-show</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8v-show%E6%9B%BF%E4%BB%A3v-if"><span class="nav-text">使用v-show替代v-if</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85"><span class="nav-text">组件封装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vue%E4%B8%ADkey%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-text">vue中key的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E8%A1%A8%E7%8E%B0"><span class="nav-text">在生命周期的表现</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2021</span>&nbsp;-&nbsp;2025
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Jeff Jayden</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            本站由 <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/brands/github.png"></span> 提供部署服务
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">访问量</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vue%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-text">vue的优势</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vuex"><span class="nav-text">Vuex</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ssr"><span class="nav-text">ssr</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vue-router%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%A8%A1%E5%BC%8F%EF%BC%8C%E5%8E%9F%E7%90%86"><span class="nav-text">vue-router的两种模式，原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vuex%E5%9C%A8%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%97%B6%E5%80%99-%E4%BC%9A%E6%B8%85%E9%99%A4%E4%BF%9D%E5%AD%98%E7%9A%84%E6%95%B0%E6%8D%AE%E5%98%9B-%E4%B8%BA%E4%BB%80%E4%B9%88"><span class="nav-text">vuex在刷新页面的时候 会清除保存的数据嘛 为什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nextick"><span class="nav-text">nextick</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v-if-v-show"><span class="nav-text">v-if&amp;v-show</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8v-show%E6%9B%BF%E4%BB%A3v-if"><span class="nav-text">使用v-show替代v-if</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E5%B0%81%E8%A3%85"><span class="nav-text">组件封装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vue%E4%B8%ADkey%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-text">vue中key的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E8%A1%A8%E7%8E%B0"><span class="nav-text">在生命周期的表现</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>

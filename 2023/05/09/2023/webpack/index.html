@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Jeff Jayden">
+    
+    <title>
+        
+            Webpack |
+        
+        To be a better man
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"To be a better man","author":"Jeff Jayden","avatar":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","logo":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","favicon":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg"},"menu":{"home":"/                        || fa-solid fa-home","archives":"/archives            || fa-solid fa-box-archive","tags":"/tags                    || fa-solid fa-tags","tools":"/tools","about":"/about                  || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"少点犹豫 || 多点执行力","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":"作者本人很有趣噢～ 快来关注他吧～","category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":false,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null},"created_datetime_icon":"fa-solid fa-file-pen","updated_datetime_icon":"fa-solid fa-arrows-rotate"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2021,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom.css"],"js":[null]},"language":"zh-CN","search":{"path":"search.json","field":"all","content":true,"format":"striptags"},"root":"","source_data":{"tools":[{"category":"AIGC","anchorId":"QUlHQw0"},{"name":"ChatGPT","link":"https://chat.openai.com/","description":"OpenAI 旗下 AI 聊天对话工具","image":"/images/tools/chatgpt.svg"},{"name":"Gemini","link":"https://gemini.google.com/app","description":"Google 旗下 AI 聊天对话工具","image":"/images/tools/gemini.svg"},{"name":"Kimi","link":"https://kimi.moonshot.cn/","description":"帮你看更大的世界","image":"/images/tools/kimi.svg"},{"name":"Copilot","link":"https://copilot.microsoft.com/","description":"微软旗下的日常 AI 助手","image":"/images/tools/copilot.png"},{"name":"文心一言","link":"https://yiyan.baidu.com/","description":"百度旗下 AI 聊天对话工具","image":"/images/tools/wenxinyiyan.png"},{"name":"通义千问","link":"https://tongyi.aliyun.com/qianwen/","description":"阿里巴巴旗下 AI 聊天对话工具","image":"/images/tools/tongyiqianwen.svg"},{"name":"讯飞星火","link":"https://xinghuo.xfyun.cn/","description":"科大讯飞星火认知 AI 大模型","image":"/images/tools/xinghuo.svg"},{"name":"Midjourney","link":"https://www.midjourney.com/","description":"AI 图像和插画生成工具","image":"/images/tools/midjourney.png"},{"category":"技术社区","anchorId":"JUU2JThBJTgwJUU2JTlDJUFGJUU3JUE0JUJFJUU1JThDJUJB9"},{"name":"稀土掘金","link":"https://juejin.cn/","description":"一个帮助开发者成长的社区","image":"/images/tools/juejin.svg"},{"name":"博客园","link":"https://www.cnblogs.com/","description":"开发者的网上家园","image":"/images/tools/cnblogs.png"},{"name":"StackOverflow","link":"https://stackoverflow.com/","description":"全球最大的技术问答社区","image":"/images/tools/stackoverflow.png"},{"name":"开源中国","link":"https://www.oschina.net/","description":"目前国内最大的开源技术社区","image":"/images/tools/oschina.webp"},{"name":"CSDN","link":"https://www.csdn.net/","description":"中文最大的技术社区","image":"/images/tools/csdn.png"}]},"version":"4.2.3"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               To be a better man
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tools">
+                                
+                                工具
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
+                            
+                            工具
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        Webpack
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Jeff Jayden</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime">2023-05-09 15:13:34</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
+                <span class="datetime" data-updated="Fri Nov 21 2025 08:58:05 GMT+0000">2025-11-21 08:58:05</span>
+            </span>
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Webpack/">Webpack</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.5k 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>5 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="webpack核心功能和性能优化"><a href="#webpack核心功能和性能优化" class="headerlink" title="webpack核心功能和性能优化"></a><a class="link"   target="_blank" rel="noopener" href="https://webpack.docschina.org/guides" >webpack<i class="fas fa-external-link-alt"></i></a>核心功能和性能优化</h1><h2 id="编译过程"><a href="#编译过程" class="headerlink" title="编译过程"></a>编译过程</h2><p><img   src="/../images/webpack/1741094588163.png" ><br><img   src="/../images/webpack/1741094704691.png" ></p>
+<h2 id="编译结果分析"><a href="#编译结果分析" class="headerlink" title="编译结果分析"></a>编译结果分析</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//合并两个模块</span></span><br><span class="line"><span class="comment">//  ./src/a.js</span></span><br><span class="line"><span class="comment">//  ./src/index.js</span></span><br><span class="line"></span><br><span class="line">(<span class="keyword">function</span> (<span class="params">modules</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> moduleExports = &#123;&#125;; <span class="comment">//用于缓存模块的导出结果</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//require函数相当于是运行一个模块，得到模块导出结果</span></span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">__webpack_require</span>(<span class="params">moduleId</span>) &#123; <span class="comment">//moduleId就是模块的路径</span></span><br><span class="line">        <span class="keyword">if</span> (moduleExports[moduleId]) &#123;</span><br><span class="line">            <span class="comment">//检查是否有缓存</span></span><br><span class="line">            <span class="keyword">return</span> moduleExports[moduleId];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> func = modules[moduleId]; <span class="comment">//得到该模块对应的函数</span></span><br><span class="line">        <span class="keyword">var</span> <span class="variable language_">module</span> = &#123;</span><br><span class="line">            <span class="attr">exports</span>: &#123;&#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title function_">func</span>(<span class="variable language_">module</span>, <span class="variable language_">module</span>.<span class="property">exports</span>, __webpack_require); <span class="comment">//运行模块</span></span><br><span class="line">        <span class="keyword">var</span> result = <span class="variable language_">module</span>.<span class="property">exports</span>; <span class="comment">//得到模块导出的结果</span></span><br><span class="line">        moduleExports[moduleId] = result; <span class="comment">//缓存起来</span></span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//执行入口模块</span></span><br><span class="line">    <span class="keyword">return</span> <span class="title function_">__webpack_require</span>(<span class="string">&quot;./src/index.js&quot;</span>); <span class="comment">//require函数相当于是运行一个模块，得到模块导出结果</span></span><br><span class="line">&#125;)(&#123; <span class="comment">//该对象保存了所有的模块，以及模块对应的代码</span></span><br><span class="line">    <span class="string">&quot;./src/a.js&quot;</span>: <span class="keyword">function</span> (<span class="params"><span class="variable language_">module</span>, <span class="built_in">exports</span></span>) &#123;</span><br><span class="line">        <span class="built_in">eval</span>(<span class="string">&quot;console.log(\&quot;module a\&quot;)\nmodule.exports = \&quot;a\&quot;;\n //# sourceURL=webpack:///./src/a.js&quot;</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;./src/index.js&quot;</span>: <span class="keyword">function</span> (<span class="params"><span class="variable language_">module</span>, <span class="built_in">exports</span>, __webpack_require</span>) &#123;</span><br><span class="line">        <span class="built_in">eval</span>(<span class="string">&quot;console.log(\&quot;index module\&quot;)\nvar a = __webpack_require(\&quot;./src/a.js\&quot;)\na.abc();\nconsole.log(a)\n //# sourceURL=webpack:///./src/index.js&quot;</span>)</span><br><span class="line">      </span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="loader"><a href="#loader" class="headerlink" title="loader"></a>loader</h2><p>loader本质上是一个函数，它的作用是将某个源码字符串转换成另一个源码字符串返回。</p>
+<h2 id="plugin"><a href="#plugin" class="headerlink" title="plugin"></a>plugin</h2><p>plugin的<strong>本质</strong>是一个带有apply方法的对象    监听事件 事件触发做指定的事情</p>
+<h2 id="懒加载"><a href="#懒加载" class="headerlink" title="懒加载"></a>懒加载</h2><p>加快了应用的初始加载速度，减轻了它的总体体积</p>
+<h1 id="webpack打包优化"><a href="#webpack打包优化" class="headerlink" title="webpack打包优化"></a>webpack打包优化</h1><ol>
+<li>优化loader</li>
+<li>happypack 并行打包</li>
+<li>dllplugin 提前打包</li>
+<li>scope hoisting 合并代码</li>
+<li>tree shaking 删除代码</li>
+</ol>
+<h1 id="vite热更新怎么实现的"><a href="#vite热更新怎么实现的" class="headerlink" title="vite热更新怎么实现的"></a>vite热更新怎么实现的</h1><p>Vite是一个现代化的前端开发与打包工具，它通过利用原生ES模块的特性实现了极快的服务器启动和热模块替换（Hot Module Replacement, HMR）。Vite的HMR实现依赖于以下几个关键点：</p>
+<ol>
+<li><strong>原生ES模块导入</strong>：Vite使用原生ES模块（ESM）来加载模块，这意味着它不需要对代码进行预打包，各个模块都是按需加载的。这使得启动速度非常快。</li>
+<li><strong>WebSocket连接</strong>：Vite在开发服务器和客户端之间建立WebSocket连接，用于实时通信。服务器监测文件的变化，并且通过WebSocket通知客户端进行更新。</li>
+<li><strong>文件系统监听</strong>：Vite使用文件系统监听工具（例如<code>chokidar</code>）来监视工作目录下所有文件的变化。一旦检测到文件变化，Vite将重新加载被修改的模块和依赖该模块的链路。</li>
+<li><strong>模块热替换</strong>：Vite会发送一个HMR更新到客户端，客户端收到更新后，会清除相关模块的缓存并重新请求该模块。因为使用了ESM，浏览器会重新获取更新的模块并执行代码。</li>
+<li><strong>状态保持</strong>：对于支持HMR API的模块（即在其代码中处理了<code>module.hot</code>接口的模块），Vite不仅会重新加载代码，还会尝试保持应用状态，例如组件的状态。这个过程需要开发者的配合，通过编写HMR接口的处理代码来实现。</li>
+<li><strong>插件支持</strong>：Vite允许通过插件来扩展HMR功能。开发者可以自行编写HMR兼容的代码，或者使用第三方插件，实现特定框架或库的HMR集成</li>
+</ol>
+<h1 id="vite-webpack区别"><a href="#vite-webpack区别" class="headerlink" title="vite webpack区别"></a>vite webpack区别</h1><p>Vite 和 Webpack 是现代前端开发中常用的两个构建工具，它们在设计理念、实现方式以及性能表现上存在一些区别：</p>
+<ol>
+<li><p><strong>构建速度</strong>：</p>
+<ul>
+<li>Vite 在开发环境下提供了极快的服务器启动和热更新速度，因为它利用了浏览器的原生 ES 模块导入（ESM）能力，不需要打包整个项目，而是按需编译[^34^][^37^]。</li>
+<li>Webpack 在启动时需要分析项目所有依赖并打包，因此启动速度相对较慢，随着项目规模的增长，这个时间可能会显著增加[^36^][^37^]。</li>
+</ul>
+</li>
+<li><p><strong>打包原理</strong>：</p>
+<ul>
+<li>Vite 在开发环境中不生成捆绑包，而是提供一个开发服务器，当请求模块时，动态地构建并服务于浏览器[^37^]。</li>
+<li>Webpack 通过 loader 和 plugin 系统处理项目资源，将它们打包成一个或多个 bundle，适用于生产环境[^36^][^43^]。</li>
+</ul>
+</li>
+<li><p><strong>生产环境</strong>：</p>
+<ul>
+<li>Vite 在生产环境中使用 Rollup 进行打包，因为 Rollup 生成的文件更小，且插件生态更为完善[^34^]。</li>
+<li>Webpack 同样适用于生产环境，提供了丰富的优化选项，如代码分割、压缩等[^43^]。</li>
+</ul>
+</li>
+<li><p><strong>生态系统和插件</strong>：</p>
+<ul>
+<li>Webpack 拥有一个庞大的生态系统，有大量的 loader 和 plugin 可用于扩展功能[^36^][^43^]。</li>
+<li>Vite 作为一个较新的工具，其生态系统正在迅速增长，提供了一些内置功能，同时也支持第三方插件[^34^]。</li>
+</ul>
+</li>
+<li><p><strong>配置复杂度</strong>：</p>
+<ul>
+<li>Webpack 的配置相对复杂，需要手动配置许多选项来满足项目需求[^36^][^43^]。</li>
+<li>Vite 旨在降低配置的复杂度，提供了许多开箱即用的功能，使得项目配置更为简洁[^34^][^36^]。</li>
+</ul>
+</li>
+<li><p><strong>性能优化</strong>：</p>
+<ul>
+<li>Vite 利用 ESbuild 进行预构建依赖，ESbuild 用 Go 语言编写，性能优于基于 Node.js 的 Webpack[^37^]。</li>
+<li>Webpack 5 开始引入持久化缓存等优化措施，提高构建性能[^40^]。</li>
+</ul>
+</li>
+<li><p><strong>热更新（HMR）</strong>：</p>
+<ul>
+<li>Vite 的热更新非常快速，因为它只更新变更的部分，不需要重新编译整个项目[^34^]。</li>
+<li>Webpack 也支持热更新，但在大型项目中，热更新的性能可能不如 Vite[^36^]。</li>
+</ul>
+</li>
+<li><p><strong>浏览器支持</strong>：</p>
+<ul>
+<li>Vite 需要现代浏览器支持 ESM，且不能识别 CommonJS 语法[^37^]。</li>
+<li>Webpack 支持多种模块类型，包括 ESM 和 CommonJS，兼容性更广[^43^]。</li>
+</ul>
+</li>
+</ol>
+<p>综上所述，Vite 和 Webpack 各有优势，选择哪个工具取决于项目需求、团队熟悉度以及对开发体验和生产环境性能的考量。</p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Webpack/">Webpack</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2023/08/11/2023/html/"
+                                   title="html"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">html</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2023/03/09/2023/javascript/"
+                                   title="javascript学习记录"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">javascript学习记录</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E5%92%8C%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="nav-text">webpack核心功能和性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B"><span class="nav-text">编译过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E7%BB%93%E6%9E%9C%E5%88%86%E6%9E%90"><span class="nav-text">编译结果分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#loader"><span class="nav-text">loader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#plugin"><span class="nav-text">plugin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="nav-text">懒加载</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack%E6%89%93%E5%8C%85%E4%BC%98%E5%8C%96"><span class="nav-text">webpack打包优化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vite%E7%83%AD%E6%9B%B4%E6%96%B0%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84"><span class="nav-text">vite热更新怎么实现的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vite-webpack%E5%8C%BA%E5%88%AB"><span class="nav-text">vite webpack区别</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2021</span>&nbsp;-&nbsp;2025
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Jeff Jayden</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            本站由 <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/brands/github.png"></span> 提供部署服务
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">访问量</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E5%92%8C%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="nav-text">webpack核心功能和性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B"><span class="nav-text">编译过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E7%BB%93%E6%9E%9C%E5%88%86%E6%9E%90"><span class="nav-text">编译结果分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#loader"><span class="nav-text">loader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#plugin"><span class="nav-text">plugin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="nav-text">懒加载</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#webpack%E6%89%93%E5%8C%85%E4%BC%98%E5%8C%96"><span class="nav-text">webpack打包优化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vite%E7%83%AD%E6%9B%B4%E6%96%B0%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84"><span class="nav-text">vite热更新怎么实现的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vite-webpack%E5%8C%BA%E5%88%AB"><span class="nav-text">vite webpack区别</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>

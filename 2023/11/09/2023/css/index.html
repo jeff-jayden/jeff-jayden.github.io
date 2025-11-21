@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Jeff Jayden">
+    
+    <title>
+        
+            css学习记录 |
+        
+        To be a better man
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"To be a better man","author":"Jeff Jayden","avatar":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","logo":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg","favicon":"https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg"},"menu":{"home":"/                        || fa-solid fa-home","archives":"/archives            || fa-solid fa-box-archive","tags":"/tags                    || fa-solid fa-tags","tools":"/tools","about":"/about                  || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"少点犹豫 || 多点执行力","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":"作者本人很有趣噢～ 快来关注他吧～","category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":false,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null},"created_datetime_icon":"fa-solid fa-file-pen","updated_datetime_icon":"fa-solid fa-arrows-rotate"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2021,"word_count":false,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom.css"],"js":[null]},"language":"zh-CN","search":{"path":"search.json","field":"all","content":true,"format":"striptags"},"root":"","source_data":{"tools":[{"category":"AIGC","anchorId":"QUlHQw0"},{"name":"ChatGPT","link":"https://chat.openai.com/","description":"OpenAI 旗下 AI 聊天对话工具","image":"/images/tools/chatgpt.svg"},{"name":"Gemini","link":"https://gemini.google.com/app","description":"Google 旗下 AI 聊天对话工具","image":"/images/tools/gemini.svg"},{"name":"Kimi","link":"https://kimi.moonshot.cn/","description":"帮你看更大的世界","image":"/images/tools/kimi.svg"},{"name":"Copilot","link":"https://copilot.microsoft.com/","description":"微软旗下的日常 AI 助手","image":"/images/tools/copilot.png"},{"name":"文心一言","link":"https://yiyan.baidu.com/","description":"百度旗下 AI 聊天对话工具","image":"/images/tools/wenxinyiyan.png"},{"name":"通义千问","link":"https://tongyi.aliyun.com/qianwen/","description":"阿里巴巴旗下 AI 聊天对话工具","image":"/images/tools/tongyiqianwen.svg"},{"name":"讯飞星火","link":"https://xinghuo.xfyun.cn/","description":"科大讯飞星火认知 AI 大模型","image":"/images/tools/xinghuo.svg"},{"name":"Midjourney","link":"https://www.midjourney.com/","description":"AI 图像和插画生成工具","image":"/images/tools/midjourney.png"},{"category":"技术社区","anchorId":"JUU2JThBJTgwJUU2JTlDJUFGJUU3JUE0JUJFJUU1JThDJUJB9"},{"name":"稀土掘金","link":"https://juejin.cn/","description":"一个帮助开发者成长的社区","image":"/images/tools/juejin.svg"},{"name":"博客园","link":"https://www.cnblogs.com/","description":"开发者的网上家园","image":"/images/tools/cnblogs.png"},{"name":"StackOverflow","link":"https://stackoverflow.com/","description":"全球最大的技术问答社区","image":"/images/tools/stackoverflow.png"},{"name":"开源中国","link":"https://www.oschina.net/","description":"目前国内最大的开源技术社区","image":"/images/tools/oschina.webp"},{"name":"CSDN","link":"https://www.csdn.net/","description":"中文最大的技术社区","image":"/images/tools/csdn.png"}]},"version":"4.2.3"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               To be a better man
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                标签
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tools">
+                                
+                                工具
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            标签
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
+                            
+                            工具
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        css学习记录
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://raw.githubusercontent.com/jeff-jayden/logo_of_mine/master/assets/blog/mm.jpeg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Jeff Jayden</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime">2023-11-09 15:13:34</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-arrows-rotate"></i>&nbsp;
+                <span class="datetime" data-updated="Fri Nov 21 2025 08:58:05 GMT+0000">2025-11-21 08:58:05</span>
+            </span>
+        
+
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Css/">Css</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>3.8k 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>15 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css3_flexbox.asp" >flex布局<i class="fas fa-external-link-alt"></i></a></h1><ul>
+<li><code>flex-direction</code> 定义容器要在哪个方向上堆叠 flex 项目</li>
+<li><code>flex-wrap</code>  规定是否应该对 flex 项目换行</li>
+<li><code>flex-flow </code>   用于同时设置 flex-direction 和 flex-wrap 属性的简写属性</li>
+<li><code>flex</code> 用于同时设置<code>flex-grow</code>(默认0) <code>flex-shrink</code> (默认1) <code>flex-basis</code> (默认auto)</li>
+<li><code>justify-content</code>   用于对齐 flex 项目 （一行 左右方向操作）</li>
+<li><code>align-items </code> 用于垂直对齐 flex 项目  (不换行的时候 上下方向操作)</li>
+<li><code>align-content </code> 用于对齐弹性线 （换行得时候 上下方向操作）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flex-flow: flex-direction flex-wrap</span><br><span class="line">flex: flex-grow(有剩余宽度的情况 0) flex-shrink(超出规定宽度的情况 1) flex-basis(基本的宽度 auto flex-basis比width具有更高的优先级)</span><br></pre></td></tr></table></figure>
+
+<p><strong>align-self</strong>：auto | flex-start | flex-end | center | baseline | stretch</p>
+<p><img   src="C:\Users\20457\AppData\Roaming\Typora\typora-user-images\image-20240323194835754.png"  alt="image-20240323194835754"></p>
+<h1 id="li元素"><a href="#li元素" class="headerlink" title="li元素"></a>li元素</h1><p>list-style: &lt;’ <a class="link"   target="_blank" rel="noopener" href="https://james-curtis.github.io/css-handbook/properties/list/list-style-type.htm" >list-style-type<i class="fas fa-external-link-alt"></i></a> ‘&gt; || &lt;’ <a class="link"   target="_blank" rel="noopener" href="https://james-curtis.github.io/css-handbook/properties/list/list-style-position.htm" >list-style-position<i class="fas fa-external-link-alt"></i></a> ‘&gt; || &lt;’ <a class="link"   target="_blank" rel="noopener" href="https://james-curtis.github.io/css-handbook/properties/list/list-style-image.htm" >list-style-image<i class="fas fa-external-link-alt"></i></a> ‘&gt;</p>
+<p>disc outside none</p>
+<h1 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h1><p>定位元素。即定义了<a class="link"   target="_blank" rel="noopener" href="https://eric-gitta-moore.github.io/css-handbook/properties/positioning/position.htm" >position<i class="fas fa-external-link-alt"></i></a>为<code>非static</code>的元素</p>
+<h1 id="transform"><a href="#transform" class="headerlink" title="transform"></a>transform</h1><h5 id="transform-translate-50-是参考哪个元素的50-参考自身的宽高"><a href="#transform-translate-50-是参考哪个元素的50-参考自身的宽高" class="headerlink" title="transform: translate(-50%);是参考哪个元素的50%  参考自身的宽高"></a>transform: translate(-50%);是参考哪个元素的50%  参考自身的宽高</h5><p><code>transform: translate(-50%,-50%);</code> 表示将元素沿着其自身的宽度和高度的一半进行平移。</p>
+<p>需要注意的是，这种技术通常与绝对定位（absolute positioning）或固定定位（fixed positioning）一起使用，以便相对于其父元素进行居中定位。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.big</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.small</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: aqua;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>,-<span class="number">50%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css3_2dtransforms.asp"><code>transform</code></a> 变换  translate左右移动</p>
+<p><code>transition</code> 过渡   元素慢慢变化</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transition-property</span>: width;</span><br><span class="line"><span class="attribute">transition-duration</span>: <span class="number">2s</span>;</span><br><span class="line"><span class="attribute">transition-timing-function</span>: linear;</span><br><span class="line"><span class="attribute">transition-delay</span>: <span class="number">1s</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><code>animation</code> 动画   none 0 ease 0 1 normal</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">animation</span>: name duration <span class="built_in">timing-function</span>(动画的速度) delay iteration-count direction;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">@keyframes</span> 定义关键帧</span><br><span class="line"></span><br><span class="line"><span class="attribute">name</span>: 动画名</span><br><span class="line"><span class="attribute">duration</span>: 持续时间</span><br><span class="line">iteration-count：设置动画应运行多少次  infinite 无限次</span><br><span class="line">direction：反向或交替运行动画  normal - 动画正常播放（向前）。默认值</span><br><span class="line">                            reverse - 动画以反方向播放（向后）</span><br><span class="line">                            alternate - 动画先向前播放，然后向后</span><br><span class="line">                            alternate-reverse - 动画先向后播放，然后向前</span><br><span class="line">timing-function(动画的速度)</span><br><span class="line">                            ease - 指定从慢速开始，然后加快，然后缓慢结束的动画（默认）</span><br><span class="line">                            linear - 规定从开始到结束的速度相同的动画</span><br><span class="line">                            ease-in - 规定慢速开始的动画</span><br><span class="line">                            ease-out - 规定慢速结束的动画</span><br><span class="line">                            ease-in-out - 指定开始和结束较慢的动画</span><br><span class="line">                            cubic-bezier(n,n,n,n) - 运行您在三次贝塞尔函数中定义自己的值</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="grid布局"><a href="#grid布局" class="headerlink" title="grid布局"></a>grid布局</h1><p><a class="link"   target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html" >链接<i class="fas fa-external-link-alt"></i></a></p>
+<p>align-item 纵向  justify-item 横向</p>
+<p><code>place-items</code>属性是<code>align-items</code>属性和<code>justify-items</code>属性的合并简写形式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">place-items: &lt;align-items&gt; &lt;justify-items&gt;;</span><br></pre></td></tr></table></figure>
+
+<p><code>place-content</code>属性是<code>align-content</code>属性和<code>justify-content</code>属性的合并简写形式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">place-<span class="attribute">content</span>: &lt;align-content&gt; &lt;justify-content&gt;</span><br></pre></td></tr></table></figure>
+
+<p>grid-row  1&#x2F;3   1&#x2F;span 2</p>
+<p>grid-column</p>
+<p>grid-area  左上角点位置，右下角位置开区间，不包含  1&#x2F;2&#x2F;5&#x2F;6    [(1,2)到(5,6))这个区域</p>
+<p><code>grid-gap</code> 属性是 grid-row-gap 和 grid-column-gap 属性的简写属性</p>
+<h1 id="background"><a href="#background" class="headerlink" title="background"></a>background</h1><h1 id="伪类-伪元素"><a href="#伪类-伪元素" class="headerlink" title="伪类&amp;伪元素"></a><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_pseudo_elements.asp" >伪类&amp;伪元素<i class="fas fa-external-link-alt"></i></a></h1><p>: 伪类</p>
+<p><code>:link</code>  未浏览</p>
+<p><code>:visited</code>  已浏览</p>
+<p><code>:hover</code>  鼠标放上去</p>
+<p><code>:active</code> 点击得时候</p>
+<p>:: 伪元素</p>
+<table>
+<thead>
+<tr>
+<th align="left">选择器</th>
+<th align="left">例子</th>
+<th align="left">例子描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_after.asp" >::after<i class="fas fa-external-link-alt"></i></a></td>
+<td align="left">p::after</td>
+<td align="left">在每个 <p> 元素之后插入内容。</td>
+</tr>
+<tr>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_before.asp" >::before<i class="fas fa-external-link-alt"></i></a></td>
+<td align="left">p::before</td>
+<td align="left">在每个 <p> 元素之前插入内容。</td>
+</tr>
+<tr>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_first-letter.asp" >::first-letter<i class="fas fa-external-link-alt"></i></a></td>
+<td align="left">p::first-letter</td>
+<td align="left">选择每个 <p> 元素的首字母。</td>
+</tr>
+<tr>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_first-line.asp" >::first-line<i class="fas fa-external-link-alt"></i></a></td>
+<td align="left">p::first-line</td>
+<td align="left">选择每个 <p> 元素的首行。</td>
+</tr>
+<tr>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/selector_selection.asp" >::selection<i class="fas fa-external-link-alt"></i></a></td>
+<td align="left">p::selection</td>
+<td align="left">选择用户选择的元素部分。</td>
+</tr>
+</tbody></table>
+<h1 id="nth-child-nth-of-type"><a href="#nth-child-nth-of-type" class="headerlink" title="nth-child&amp;nth-of-type()"></a>nth-child&amp;nth-of-type()</h1><p>:nth-child(n) :nth-last-child(n)(倒着数) :first-child :last-child  表示在每一组有父子结构的都会生效</p>
+<p>:first-of-type :last-of-type :nth-of-type(n) :nth-last-of-type(n)  匹配父元素的倒数第n个子元素</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/2050/p/3569509.html"><code>first-child</code>与<code>first-of-type</code>的区别</a> </p>
+<p><strong>:first-child</strong> 匹配的是某父元素的第一个子元素，可以说是结构上的第一个子元素。</p>
+<p><strong>:first-of-type</strong> 匹配的是某父元素下相同类型子元素中的第一个，比如 p:first-of-type，就是指所有类型为p的子元素中的第一个。这里不再限制是第一个子元素了，只要是该类型元素的第一个就行了。</p>
+<p>同样类型的选择器 :last-child 和 :last-of-type、:nth-child(n) 和 :nth-of-type(n) 也可以这样去理解。</p>
+<h1 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h1><p><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_attribute_selectors.asp" >链接<i class="fas fa-external-link-alt"></i></a></p>
+<ul>
+<li><p>[attribute|&#x3D;”value”] 选择器用于选取指定属性以指定值开头的元素</p>
+</li>
+<li><p>[attribute^&#x3D;”value”] 选择器用于选取指定属性以指定值开头的元素 值不必是完整单词</p>
+</li>
+<li><p>[attribute$&#x3D;”value”] 选择器用于选取指定属性以指定值结尾的元素 值不必是完整单词</p>
+</li>
+<li><p>[attribute*&#x3D;”value”] 选择器选取属性值包含指定词的元素 值不必是完整单词</p>
+</li>
+</ul>
+<h1 id="position"><a href="#position" class="headerlink" title="position"></a>position</h1><p><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_positioning.asp" >链接<i class="fas fa-external-link-alt"></i></a></p>
+<ul>
+<li><p>static                                              top、bottom、left 和 right不起作用</p>
+</li>
+<li><p>relative                                          相对于其正常位置进行定位</p>
+</li>
+<li><p>fixed                                               固定某个元素不动   top、bottom、left 和 right进行调整位置在哪固定</p>
+</li>
+<li><p>absolute                                        相对于最近的定位祖先元素（除了static都算定位元素）进行定位（而不是相对于视口定位，如          fixed）如果绝对定位的元素没有祖先，它将使用文档主体（body），并随页面滚动一起移动</p>
+</li>
+<li><p>sticky                                              起先它会被相对定位，直到在视口中遇到给定的偏移位置为止 - 然后将其“粘贴”在适当的位置（比如  </p>
+<p>​                                                        position:fixed）</p>
+</li>
+</ul>
+<p>absolute和fixed会脱离文档流</p>
+<h1 id="margin塌陷"><a href="#margin塌陷" class="headerlink" title="margin塌陷"></a>margin塌陷</h1><p><a class="link"   target="_blank" rel="noopener" href="https://juejin.cn/post/6976272394247897101" >https://juejin.cn/post/6976272394247897101<i class="fas fa-external-link-alt"></i></a></p>
+<p>父子嵌套的元素垂直方向的<code>margin</code>取最大值</p>
+<p>解决margin塌陷方法</p>
+<p><img   src="C:\Users\20457\AppData\Roaming\Typora\typora-user-images\image-20240105224715948.png"  alt="image-20240105224715948"></p>
+<p>margin合并</p>
+<p>两个上下相邻元素的外边距取最大值</p>
+<h1 id="rem和em区别"><a href="#rem和em区别" class="headerlink" title="rem和em区别"></a>rem和em区别</h1><p>rem与em都是相对单位，我们使用它们的目的就是为了适应各种不同的移动端和pc端的屏幕。 <strong>rem是根据html根节点来计算的，而em是根据父级元素的字体计算的</strong>。 简单概括就是: rem相对于根元素,   em相对于父元素字体</p>
+<h1 id="预处理器-后处理器"><a href="#预处理器-后处理器" class="headerlink" title="预处理器&amp;后处理器"></a>预处理器&amp;后处理器</h1><p>less sass cssnext</p>
+<p>autoprefixer</p>
+<h1 id="box-shadow"><a href="#box-shadow" class="headerlink" title="box-shadow"></a>box-shadow</h1><p>box-shadow: h-shadow v-shadow blur spread color inset;</p>
+<h3 id="属性值"><a href="#属性值" class="headerlink" title="属性值"></a>属性值</h3><table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+<th align="left">测试</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><em>h-shadow</em></td>
+<td align="left">必需。水平阴影的位置。允许负值。</td>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow" >测试<i class="fas fa-external-link-alt"></i></a></td>
+</tr>
+<tr>
+<td align="left"><em>v-shadow</em></td>
+<td align="left">必需。垂直阴影的位置。允许负值。</td>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow" >测试<i class="fas fa-external-link-alt"></i></a></td>
+</tr>
+<tr>
+<td align="left"><em>blur</em></td>
+<td align="left">可选。模糊距离。</td>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow&p=3" >测试<i class="fas fa-external-link-alt"></i></a></td>
+</tr>
+<tr>
+<td align="left"><em>spread</em></td>
+<td align="left">可选。阴影的尺寸。</td>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow&p=7" >测试<i class="fas fa-external-link-alt"></i></a></td>
+</tr>
+<tr>
+<td align="left"><em>color</em></td>
+<td align="left">可选。阴影的颜色。请参阅 CSS 颜色值。</td>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow&p=10" >测试<i class="fas fa-external-link-alt"></i></a></td>
+</tr>
+<tr>
+<td align="left">inset</td>
+<td align="left">可选。将外部阴影 (outset) 改为内部阴影。</td>
+<td align="left"><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/c.asp?f=css_box-shadow&p=15" >测试<i class="fas fa-external-link-alt"></i></a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>默认值：</th>
+<th>none</th>
+</tr>
+</thead>
+</table>
+<h1 id="grid"><a href="#grid" class="headerlink" title="grid"></a>grid</h1><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_grid-template-rows.asp" >grid-template-rows<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_grid-template-columns.asp" >grid-template-columns<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_grid-template-areas.asp" >grid-template-areas<i class="fas fa-external-link-alt"></i></a> 要设置grid-area属性</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_grid-auto-rows.asp" >grid-auto-rows<i class="fas fa-external-link-alt"></i></a>  grid-template-rows 属性覆盖此属性</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_grid-auto-columns.asp" >grid-auto-columns<i class="fas fa-external-link-alt"></i></a>  grid-template-columns 属性会覆盖此属性</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_grid-auto-flow.asp" >grid-auto-flow<i class="fas fa-external-link-alt"></i></a>  两个属性 row column</li>
+</ul>
+<p>grid-area: 语法是 grid-row-start &#x2F; grid-column-start &#x2F; grid-row-end &#x2F; grid-column-end<br>默认值 auto &#x2F; auto &#x2F; auto &#x2F; auto	</p>
+<p>grid: none|grid-template-rows &#x2F; grid-template-columns|grid-template-areas|grid-template-rows &#x2F; [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows &#x2F; grid-template-columns|initial|inherit;</p>
+<h2 id="属性值-1"><a href="#属性值-1" class="headerlink" title="属性值"></a>属性值</h2><table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">none</td>
+<td align="left">默认值。不定义行或列的尺寸。</td>
+</tr>
+<tr>
+<td align="left"><em>grid-template-rows</em> &#x2F; <em>grid-template-columns</em></td>
+<td align="left">规定列和行的尺寸。</td>
+</tr>
+<tr>
+<td align="left"><em>grid-template-areas</em></td>
+<td align="left">规定使用命名项目的网格布局。</td>
+</tr>
+<tr>
+<td align="left"><em>grid-template-rows</em> &#x2F; <em>grid-auto-columns</em></td>
+<td align="left">规定行的尺寸（高度），以及列的自动尺寸。</td>
+</tr>
+<tr>
+<td align="left"><em>grid-auto-rows</em> &#x2F; <em>grid-template-columns</em></td>
+<td align="left">规定行的自动尺寸，并设置 grid-template-columns 属性。</td>
+</tr>
+<tr>
+<td align="left"><em>grid-template-rows</em> &#x2F; <em>grid-auto-flow</em> <em>grid-auto-columns</em></td>
+<td align="left">规定行的尺寸（高度），以及如何放置自动就位的项目，和列的自动尺寸。</td>
+</tr>
+<tr>
+<td align="left"><em>grid-auto-flow</em> <em>grid-auto-rows</em> &#x2F; <em>grid-template-columns</em></td>
+<td align="left">规定如何放置自动就位的项目，和行的自动尺寸，以及设置 grid-template-columns 属性。</td>
+</tr>
+<tr>
+<td align="left">initial</td>
+<td align="left">将此属性设置为其默认值。参阅 <a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/css_initial.asp" >initial<i class="fas fa-external-link-alt"></i></a>。</td>
+</tr>
+<tr>
+<td align="left">inherit</td>
+<td align="left">从其父元素继承此属性。参阅 <a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/css_inherit.asp" >inherit<i class="fas fa-external-link-alt"></i></a>。</td>
+</tr>
+</tbody></table>
+<h2 id="技术细节"><a href="#技术细节" class="headerlink" title="技术细节"></a>技术细节</h2><table>
+<thead>
+<tr>
+<th>默认值：</th>
+<th>none none none auto auto row</th>
+</tr>
+</thead>
+</table>
+<h1 id="实现图片文字居中"><a href="#实现图片文字居中" class="headerlink" title="实现图片文字居中"></a>实现图片文字居中</h1><p>vertical-align</p>
+<h1 id="如何实现盒子内容水平居中"><a href="#如何实现盒子内容水平居中" class="headerlink" title="如何实现盒子内容水平居中"></a>如何实现盒子内容水平居中</h1><ul>
+<li><p>行内元素或者内联元素 使用父元素的 <code>text-align</code> 属性来实现文本水平居中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>块级元素 使用<code>margin: auto;</code> 来使元素水平居中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: auto;</span><br><span class="line">  <span class="attribute">margin-right</span>: auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 flex 布局</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 grid 布局</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  place-items: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用transform</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">position</span>: absolute;</span><br><span class="line"><span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line"><span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="如何实现两栏分开布局"><a href="#如何实现两栏分开布局" class="headerlink" title="如何实现两栏分开布局"></a>如何实现两栏分开布局</h1><h4 id="1-流式布局（使用-float）："><a href="#1-流式布局（使用-float）：" class="headerlink" title="1. 流式布局（使用 float）："></a>1. 流式布局（使用 <code>float</code>）：</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.left-column</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">70%</span>;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.right-column</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">30%</span>;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-Flex-布局："><a href="#2-Flex-布局：" class="headerlink" title="2. Flex 布局："></a>2. Flex 布局：</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.left-column</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">70%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.right-column</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-Grid-布局："><a href="#3-Grid-布局：" class="headerlink" title="3. Grid 布局："></a>3. Grid 布局：</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="number">70%</span> <span class="number">30%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="如何实现三栏布局"><a href="#如何实现三栏布局" class="headerlink" title="如何实现三栏布局"></a>如何实现三栏布局</h1><h3 id="1-流式布局（使用-float）：-1"><a href="#1-流式布局（使用-float）：-1" class="headerlink" title="1. 流式布局（使用 float）："></a>1. 流式布局（使用 <code>float</code>）：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.left-column &#123;</span><br><span class="line">  width: 30%;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.center-column &#123;</span><br><span class="line">  width: 40%;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.right-column &#123;</span><br><span class="line">  width: 30%;</span><br><span class="line">  float: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Flex-布局：-1"><a href="#2-Flex-布局：-1" class="headerlink" title="2. Flex 布局："></a>2. Flex 布局：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.left-column &#123;</span><br><span class="line">  flex: 30%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.center-column &#123;</span><br><span class="line">  flex: 40%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.right-column &#123;</span><br><span class="line">  flex: 30%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Grid-布局：-1"><a href="#3-Grid-布局：-1" class="headerlink" title="3. Grid 布局："></a>3. Grid 布局：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">  display: grid;</span><br><span class="line">  grid-template-columns: 30% 40% 30%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-圣杯布局（使用-flex-和负边距）："><a href="#4-圣杯布局（使用-flex-和负边距）：" class="headerlink" title="4. 圣杯布局（使用 flex 和负边距）："></a>4. 圣杯布局（使用 <code>flex</code> 和负边距）：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.left-column,</span><br><span class="line">.right-column,</span><br><span class="line">.center-column &#123;</span><br><span class="line">  flex: 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.center-column &#123;</span><br><span class="line">  order: 2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.left-column &#123;</span><br><span class="line">  order: 1;</span><br><span class="line">  margin-right: -100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.right-column &#123;</span><br><span class="line">  order: 3;</span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-双飞翼布局（使用-float-和-margin）："><a href="#5-双飞翼布局（使用-float-和-margin）：" class="headerlink" title="5. 双飞翼布局（使用 float 和 margin）："></a>5. 双飞翼布局（使用 <code>float</code> 和 <code>margin</code>）：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.column &#123;</span><br><span class="line">  float: left;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.left-column &#123;</span><br><span class="line">  width: 30%;</span><br><span class="line">  margin-left: -100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.center-column &#123;</span><br><span class="line">  width: 40%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.right-column &#123;</span><br><span class="line">  width: 30%;</span><br><span class="line">  margin-left: -30%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="块级格式化上下文"><a href="#块级格式化上下文" class="headerlink" title="块级格式化上下文"></a>块级格式化上下文</h1><p>BFC 主要用于处理布局和浮动等问题，它规定了块级盒子如何堆叠、定位和清除浮动</p>
+<p>创建 BFC 的方式有多种，其中一些包括：</p>
+<ul>
+<li><strong>根元素：</strong> HTML 文档的根元素（html）就是一个 BFC。</li>
+<li><strong>浮动元素：</strong> 元素的 float 属性不是 none。</li>
+<li><strong>绝对定位元素：</strong> 元素的 position 属性为 absolute 或 fixed。</li>
+<li><strong>display 属性值不为 block、inline-block、flex、inline-flex 之一的元素：</strong> 例如，table 元素会生成一个 BFC。</li>
+<li><strong>overflow 属性不为 visible 的元素：</strong> 设置了 overflow 属性值为 auto、scroll、hidden 的元素会生成 BFC。</li>
+</ul>
+<h1 id="尺寸的百分比"><a href="#尺寸的百分比" class="headerlink" title="尺寸的百分比"></a>尺寸的百分比</h1><p>普通元素相对于父元素的内容区域  （没有定位的元素称为普通元素）</p>
+<p>绝对 (固定) 定位元素的参考系为父元素中 第一个定位元素的padding区域</p>
+<h1 id="隐藏元素的三种方式"><a href="#隐藏元素的三种方式" class="headerlink" title="隐藏元素的三种方式"></a>隐藏元素的三种方式</h1><p>如果需要彻底隐藏元素且不占据页面空间，可以使用 <code>display: none;</code>；</p>
+<p>如果需要隐藏元素但仍然占据页面空间，可以使用 <code>visibility: hidden;</code>；</p>
+<p>如果需要隐藏元素但仍然保留占据的空间且可能需要进行过渡效果，可以使用 <code>opacity: 0;</code></p>
+<h1 id="css-loader-style-loader-less-loader-sass-loader"><a href="#css-loader-style-loader-less-loader-sass-loader" class="headerlink" title="css-loader&amp;style-loader&amp;less-loader&amp;sass-loader"></a>css-loader&amp;style-loader&amp;less-loader&amp;sass-loader</h1><p>由于css-loader仅提供了将css转换为字符串导出的能力</p>
+<p>style-loader可以将css-loader转换后的代码进一步处理，将css-loader导出的字符串加入到页面的style元素中</p>
+<p>BEM  &amp;  CSS in js  &amp; CSS module</p>
+<p>BEM全称是：<strong>B</strong>lock <strong>E</strong>lement <strong>M</strong>odifier</p>
+<p>BEM是一套针对css类样式的命名方法</p>
+<p>三个部分的具体含义为：</p>
+<ul>
+<li><strong>Block</strong>：页面中的大区域，表示最顶级的划分，例如：轮播图(<code>banner</code>)、布局(<code>layout</code>)、文章(<code>article</code>)等等</li>
+<li><strong>element</strong>：区域中的组成部分，例如：轮播图中的横幅图片(<code>banner__img</code>)、轮播图中的容器（<code>banner__container</code>）、布局中的头部(<code>layout__header</code>)、文章中的标题(<code>article_title</code>)</li>
+<li><strong>modifier</strong>：可选。通常表示状态，例如：处于展开状态的布局左边栏（<code>layout__left_expand</code>）、处于选中状态的轮播图小圆点(<code>banner__dot_selected</code>)</li>
+</ul>
+<p>css in js 的核心思想是：用一个JS对象来描述样式，而不是css样式表</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> styles = &#123;</span><br><span class="line">    <span class="attr">backgroundColor</span>: <span class="string">&quot;#f40&quot;</span>,</span><br><span class="line">    <span class="attr">color</span>: <span class="string">&quot;#fff&quot;</span>,</span><br><span class="line">    <span class="attr">width</span>: <span class="string">&quot;400px&quot;</span>,</span><br><span class="line">    <span class="attr">height</span>: <span class="string">&quot;500px&quot;</span>,</span><br><span class="line">    <span class="attr">margin</span>: <span class="string">&quot;0 auto&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="postcss"><a href="#postcss" class="headerlink" title="postcss"></a>postcss</h1><p>真正起作用的是里面的插件<code>postcss-preset-env</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="attr">plugins</span>: &#123;</span><br><span class="line">        <span class="string">&quot;postcss-preset-env&quot;</span>: &#123;&#125; <span class="comment">// &#123;&#125; 中可以填写插件的配置</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="border"><a href="#border" class="headerlink" title="border"></a>border</h1><p><a class="link"   target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_border_shorthand.asp" >https://www.w3school.com.cn/css/css_border_shorthand.asp<i class="fas fa-external-link-alt"></i></a></p>
+<p>border:  三个属性简写</p>
+<ul>
+<li><code>border-width</code></li>
+<li><code>border-style</code>（必需）</li>
+<li><code>border-color</code></li>
+</ul>
+<p>以切角的形式相连  比如做个三角形</p>
+<p>在CSS中，样式权重（也称为“优先级”）决定了当多个规则作用于同一个元素时，哪一个规则会被应用。权重的计算是基于选择器的类型和优先级规则来确定的。以下是CSS样式权重的具体计算方法：</p>
+<h3 id="1-权重的基本组成"><a href="#1-权重的基本组成" class="headerlink" title="1. 权重的基本组成"></a>1. <strong>权重的基本组成</strong></h3><p>CSS权重由以下几部分组成，从高到低依次为：</p>
+<ol>
+<li><strong>内联样式（Inline Styles）</strong>：直接写在HTML标签的<code>style</code>属性中的样式。</li>
+<li><strong>ID选择器（ID Selectors）</strong>：通过<code>id</code>属性选择元素。</li>
+<li><strong>类选择器、属性选择器和伪类选择器（Class, Attribute, Pseudo-class Selectors）</strong>：通过类名、属性或伪类选择元素。</li>
+<li><strong>元素选择器和伪元素选择器（Element Selectors and Pseudo-elements）</strong>：通过标签名或伪元素选择元素。</li>
+<li><strong>通用选择器（Universal Selector）</strong>：<code>*</code>选择器，权重最低。</li>
+</ol>
+<h3 id="2-权重的计算方法"><a href="#2-权重的计算方法" class="headerlink" title="2. 权重的计算方法"></a>2. <strong>权重的计算方法</strong></h3><p>权重通常用一个四元组<code>(a, b, c, d)</code>来表示，其中：</p>
+<ul>
+<li><code>a</code>：内联样式（<code>style</code>属性）的数量。</li>
+<li><code>b</code>：ID选择器的数量。</li>
+<li><code>c</code>：类选择器、属性选择器和伪类选择器的数量。</li>
+<li><code>d</code>：元素选择器和伪元素选择器的数量。</li>
+</ul>
+<p><strong>规则：</strong></p>
+<ul>
+<li>如果两个选择器的权重不同，则权重高的优先。</li>
+<li>如果权重相同，则后定义的样式优先（CSS的“后定义覆盖先定义”规则）。</li>
+<li>如果权重相同且定义顺序也相同，则继承的样式优先级最低。</li>
+</ul>
+<h3 id="3-权重计算示例"><a href="#3-权重计算示例" class="headerlink" title="3. 权重计算示例"></a>3. <strong>权重计算示例</strong></h3><p>以下是一些权重计算的例子：</p>
+<h4 id="示例1："><a href="#示例1：" class="headerlink" title="示例1："></a>示例1：</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;main&quot;</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: red;&quot;</span>&gt;</span>Hello<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123; <span class="attribute">color</span>: blue; &#125; <span class="comment">/* 权重：(0, 0, 0, 1) */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123; <span class="attribute">color</span>: green; &#125; <span class="comment">/* 权重：(0, 0, 1, 0) */</span></span><br><span class="line"><span class="selector-id">#main</span> &#123; <span class="attribute">color</span>: yellow; &#125; <span class="comment">/* 权重：(0, 1, 0, 0) */</span></span><br><span class="line"><span class="selector-tag">div</span><span class="selector-class">.container</span> &#123; <span class="attribute">color</span>: purple; &#125; <span class="comment">/* 权重：(0, 0, 1, 1) */</span></span><br><span class="line"><span class="selector-tag">div</span><span class="selector-id">#main</span> &#123; <span class="attribute">color</span>: orange; &#125; <span class="comment">/* 权重：(0, 1, 0, 1) */</span></span><br><span class="line"><span class="selector-tag">div</span><span class="selector-id">#main</span><span class="selector-class">.container</span> &#123; <span class="attribute">color</span>: pink; &#125; <span class="comment">/* 权重：(0, 1, 1, 1) */</span></span><br><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[style]</span> &#123; <span class="attribute">color</span>: black; &#125; <span class="comment">/* 权重：(1, 0, 0, 1) */</span></span><br></pre></td></tr></table></figure>
+<p>最终，<code>color: red;</code>（内联样式）会生效，因为它的权重最高：<code>(1, 0, 0, 0)</code>。</p>
+<h4 id="示例2："><a href="#示例2：" class="headerlink" title="示例2："></a>示例2：</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-class">.container</span> &#123; <span class="attribute">color</span>: purple; &#125; <span class="comment">/* 权重：(0, 0, 1, 1) */</span></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-tag">div</span> &#123; <span class="attribute">color</span>: green; &#125; <span class="comment">/* 权重：(0, 0, 1, 1) */</span></span><br></pre></td></tr></table></figure>
+<p>两个选择器的权重相同，但<code>div.container</code>定义在前，<code>color: purple</code>会生效。</p>
+<h4 id="示例3："><a href="#示例3：" class="headerlink" title="示例3："></a>示例3：</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123; <span class="attribute">color</span>: blue; &#125; <span class="comment">/* 权重：(0, 0, 0, 1) */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123; <span class="attribute">color</span>: green; &#125; <span class="comment">/* 权重：(0, 0, 1, 0) */</span></span><br></pre></td></tr></table></figure>
+<p><code>color: green;</code>会生效，因为它的权重更高。</p>
+<h3 id="4-特殊情况"><a href="#4-特殊情况" class="headerlink" title="4. 特殊情况"></a>4. <strong>特殊情况</strong></h3><ul>
+<li><strong><code>!important</code>规则</strong>：如果样式中使用了<code>!important</code>，则该样式会覆盖其他任何权重更高的样式。但<code>!important</code>应谨慎使用，因为它会破坏正常的权重规则。</li>
+<li><strong>继承样式</strong>：某些CSS属性（如<code>color</code>和<code>font-size</code>）会从父元素继承，但继承的样式权重最低，可以被其他任何规则覆盖。</li>
+</ul>
+<h3 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. <strong>总结</strong></h3><p>CSS样式的权重计算是基于选择器的类型和数量来决定的。通过合理使用选择器和避免过度依赖<code>!important</code>，可以更好地控制样式的优先级，使CSS代码更加清晰和易于维护。</p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Css/">Css</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2023/11/09/2023/axios/"
+                                   title="axios的使用"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">axios的使用</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2023/11/09/2023/%E6%AD%A3%E5%88%99/"
+                                   title="正则学习记录"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">正则学习记录</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#flex%E5%B8%83%E5%B1%80"><span class="nav-text">flex布局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#li%E5%85%83%E7%B4%A0"><span class="nav-text">li元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#z-index"><span class="nav-text">z-index</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#transform"><span class="nav-text">transform</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#transform-translate-50-%E6%98%AF%E5%8F%82%E8%80%83%E5%93%AA%E4%B8%AA%E5%85%83%E7%B4%A0%E7%9A%8450-%E5%8F%82%E8%80%83%E8%87%AA%E8%BA%AB%E7%9A%84%E5%AE%BD%E9%AB%98"><span class="nav-text">transform: translate(-50%);是参考哪个元素的50%  参考自身的宽高</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#grid%E5%B8%83%E5%B1%80"><span class="nav-text">grid布局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#background"><span class="nav-text">background</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%AA%E7%B1%BB-%E4%BC%AA%E5%85%83%E7%B4%A0"><span class="nav-text">伪类&amp;伪元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nth-child-nth-of-type"><span class="nav-text">nth-child&amp;nth-of-type()</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#position"><span class="nav-text">position</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#margin%E5%A1%8C%E9%99%B7"><span class="nav-text">margin塌陷</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rem%E5%92%8Cem%E5%8C%BA%E5%88%AB"><span class="nav-text">rem和em区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-%E5%90%8E%E5%A4%84%E7%90%86%E5%99%A8"><span class="nav-text">预处理器&amp;后处理器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#box-shadow"><span class="nav-text">box-shadow</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="nav-text">属性值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#grid"><span class="nav-text">grid</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%80%BC-1"><span class="nav-text">属性值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82"><span class="nav-text">技术细节</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%96%87%E5%AD%97%E5%B1%85%E4%B8%AD"><span class="nav-text">实现图片文字居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9B%92%E5%AD%90%E5%86%85%E5%AE%B9%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD"><span class="nav-text">如何实现盒子内容水平居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%88%86%E5%BC%80%E5%B8%83%E5%B1%80"><span class="nav-text">如何实现两栏分开布局</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-float%EF%BC%89%EF%BC%9A"><span class="nav-text">1. 流式布局（使用 float）：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Flex-%E5%B8%83%E5%B1%80%EF%BC%9A"><span class="nav-text">2. Flex 布局：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Grid-%E5%B8%83%E5%B1%80%EF%BC%9A"><span class="nav-text">3. Grid 布局：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80"><span class="nav-text">如何实现三栏布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-float%EF%BC%89%EF%BC%9A-1"><span class="nav-text">1. 流式布局（使用 float）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Flex-%E5%B8%83%E5%B1%80%EF%BC%9A-1"><span class="nav-text">2. Flex 布局：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Grid-%E5%B8%83%E5%B1%80%EF%BC%9A-1"><span class="nav-text">3. Grid 布局：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-flex-%E5%92%8C%E8%B4%9F%E8%BE%B9%E8%B7%9D%EF%BC%89%EF%BC%9A"><span class="nav-text">4. 圣杯布局（使用 flex 和负边距）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-float-%E5%92%8C-margin%EF%BC%89%EF%BC%9A"><span class="nav-text">5. 双飞翼布局（使用 float 和 margin）：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9D%97%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87"><span class="nav-text">块级格式化上下文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%99%BE%E5%88%86%E6%AF%94"><span class="nav-text">尺寸的百分比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="nav-text">隐藏元素的三种方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css-loader-style-loader-less-loader-sass-loader"><span class="nav-text">css-loader&amp;style-loader&amp;less-loader&amp;sass-loader</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#postcss"><span class="nav-text">postcss</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#border"><span class="nav-text">border</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%9D%83%E9%87%8D%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-text">1. 权重的基本组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9D%83%E9%87%8D%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95"><span class="nav-text">2. 权重的计算方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%9D%83%E9%87%8D%E8%AE%A1%E7%AE%97%E7%A4%BA%E4%BE%8B"><span class="nav-text">3. 权重计算示例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B1%EF%BC%9A"><span class="nav-text">示例1：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B2%EF%BC%9A"><span class="nav-text">示例2：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B3%EF%BC%9A"><span class="nav-text">示例3：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5"><span class="nav-text">4. 特殊情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%80%BB%E7%BB%93"><span class="nav-text">5. 总结</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2021</span>&nbsp;-&nbsp;2025
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Jeff Jayden</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            本站由 <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="/images/brands/github.png"></span> 提供部署服务
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">访问量</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#flex%E5%B8%83%E5%B1%80"><span class="nav-text">flex布局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#li%E5%85%83%E7%B4%A0"><span class="nav-text">li元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#z-index"><span class="nav-text">z-index</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#transform"><span class="nav-text">transform</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#transform-translate-50-%E6%98%AF%E5%8F%82%E8%80%83%E5%93%AA%E4%B8%AA%E5%85%83%E7%B4%A0%E7%9A%8450-%E5%8F%82%E8%80%83%E8%87%AA%E8%BA%AB%E7%9A%84%E5%AE%BD%E9%AB%98"><span class="nav-text">transform: translate(-50%);是参考哪个元素的50%  参考自身的宽高</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#grid%E5%B8%83%E5%B1%80"><span class="nav-text">grid布局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#background"><span class="nav-text">background</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%AA%E7%B1%BB-%E4%BC%AA%E5%85%83%E7%B4%A0"><span class="nav-text">伪类&amp;伪元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nth-child-nth-of-type"><span class="nav-text">nth-child&amp;nth-of-type()</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#position"><span class="nav-text">position</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#margin%E5%A1%8C%E9%99%B7"><span class="nav-text">margin塌陷</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rem%E5%92%8Cem%E5%8C%BA%E5%88%AB"><span class="nav-text">rem和em区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8-%E5%90%8E%E5%A4%84%E7%90%86%E5%99%A8"><span class="nav-text">预处理器&amp;后处理器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#box-shadow"><span class="nav-text">box-shadow</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="nav-text">属性值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#grid"><span class="nav-text">grid</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%80%BC-1"><span class="nav-text">属性值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82"><span class="nav-text">技术细节</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%96%87%E5%AD%97%E5%B1%85%E4%B8%AD"><span class="nav-text">实现图片文字居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9B%92%E5%AD%90%E5%86%85%E5%AE%B9%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD"><span class="nav-text">如何实现盒子内容水平居中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%A4%E6%A0%8F%E5%88%86%E5%BC%80%E5%B8%83%E5%B1%80"><span class="nav-text">如何实现两栏分开布局</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-float%EF%BC%89%EF%BC%9A"><span class="nav-text">1. 流式布局（使用 float）：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Flex-%E5%B8%83%E5%B1%80%EF%BC%9A"><span class="nav-text">2. Flex 布局：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Grid-%E5%B8%83%E5%B1%80%EF%BC%9A"><span class="nav-text">3. Grid 布局：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80"><span class="nav-text">如何实现三栏布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-float%EF%BC%89%EF%BC%9A-1"><span class="nav-text">1. 流式布局（使用 float）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Flex-%E5%B8%83%E5%B1%80%EF%BC%9A-1"><span class="nav-text">2. Flex 布局：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Grid-%E5%B8%83%E5%B1%80%EF%BC%9A-1"><span class="nav-text">3. Grid 布局：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-flex-%E5%92%8C%E8%B4%9F%E8%BE%B9%E8%B7%9D%EF%BC%89%EF%BC%9A"><span class="nav-text">4. 圣杯布局（使用 flex 和负边距）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%EF%BC%88%E4%BD%BF%E7%94%A8-float-%E5%92%8C-margin%EF%BC%89%EF%BC%9A"><span class="nav-text">5. 双飞翼布局（使用 float 和 margin）：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9D%97%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87"><span class="nav-text">块级格式化上下文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%99%BE%E5%88%86%E6%AF%94"><span class="nav-text">尺寸的百分比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="nav-text">隐藏元素的三种方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css-loader-style-loader-less-loader-sass-loader"><span class="nav-text">css-loader&amp;style-loader&amp;less-loader&amp;sass-loader</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#postcss"><span class="nav-text">postcss</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#border"><span class="nav-text">border</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%9D%83%E9%87%8D%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-text">1. 权重的基本组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9D%83%E9%87%8D%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95"><span class="nav-text">2. 权重的计算方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%9D%83%E9%87%8D%E8%AE%A1%E7%AE%97%E7%A4%BA%E4%BE%8B"><span class="nav-text">3. 权重计算示例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B1%EF%BC%9A"><span class="nav-text">示例1：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B2%EF%BC%9A"><span class="nav-text">示例2：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B3%EF%BC%9A"><span class="nav-text">示例3：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5"><span class="nav-text">4. 特殊情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%80%BB%E7%BB%93"><span class="nav-text">5. 总结</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>
