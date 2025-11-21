@@ -194,7 +194,7 @@ p.then(value => {
 
 静态方法: then catch finally all allsettled race any
 
-# 面试题考点
+# 手撕
 
 ## Promise的基本概念
 
@@ -319,7 +319,7 @@ method(); // 输出： 失败 123
 - `requestAnimationFrame`的回调，宏任务（macro task）
 - 事件处理函数，宏任务(macro task)
 
-# 面试题
+# 题目
 
 1. 下面代码的输出结果是什么
 

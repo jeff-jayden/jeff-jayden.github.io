@@ -165,3 +165,8 @@ key是给每一个vnode的唯一id，可以依靠key，更准确，更快的拿�
 结论:   如果key没有发生变化，元素不会销毁重建
 
 ​			如果是组件，不会触发生命周期的勾子函数
+
+
+# 在生命周期的表现
+1. beforeCreate: 可以拿到 props
+2. created: 可以拿到 data, methods, watch, computed

@@ -7,6 +7,8 @@ tags:
 
 # package.json
 
+**结构描述**
+
 标准字段
 package.json中原有的
 
@@ -15,11 +17,6 @@ types module exports
 
 如果不设置 main 字段，那么入口文件就是根目录下的 index.js。
 main：代码入口。
-这个十分重要，特别是对于组件库。
-当你想在node_modules中修改你使用的某个组件库的代码时，
-首先在node_modules中找到这个组件库，
-第一眼就是要看这个main，找到组件库的入口文件。
-在这个入口文件中再去修改代码吧。
 
 项目在进行 npm 发布时，可以通过 files 指定需要跟随一起发布的内容来控制 npm 包的大小
 files：数组。表示代码包下载安装完成时包括的所有文件
@@ -37,7 +34,7 @@ exports: 是module更加细化的操作 exports 字段可以配置不同环境�
 
 # tsconfig.json
 
-files: 
+**files属性的作用**：
 包含特定文件：当你想要确保某些文件被包含在编译过程中，即使它们没有被其他 TypeScript 文件引用。
 包含文件夹：指定一个文件夹，让 TypeScript 编译器处理该文件夹下的所有 .ts 文件。
 排除文件和文件夹：虽然 tsconfig.json 提供了 exclude 选项来排除文件和文件夹，但使用 files 选项可以更明确地指定哪些文件和文件夹是包含的，其余的将被排除。
@@ -47,18 +44,14 @@ files:
 
 # node的模块查找策略
 
-文件查找    
+文件查找  
 以相对或绝对路径进行 require,没有后缀的时候支持自动匹配 js,json
 
 文件夹查找  
-如果没有找到文件，先找到文件中的 package.json 文件中的 main 字段文件，如果没有package.json文件或者main字段（指向一个不存在的文件），会找默认的 index 文件
+如果没有找到文件，先找到项目中的 package.json 文件中的 main 字段文件，如果没有package.json文件或者main字段（指向一个不存在的文件），会找默认的 index 文件
 
 内置模块
 直接以名称导入
 
 第三方
 直接以名称导入，但是没找到内置，就会进入第三方模块查找node_modules,没找到的话会重复 1,2 步骤
-
-
-# reference
-https://juejin.cn/post/7161392772665540644#heading-10
